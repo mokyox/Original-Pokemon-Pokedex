@@ -1,12 +1,12 @@
 import React, { Component } from "react";
-import PokemonList from "./PokemonList";
+import PokemonDisplaylist from "./PokemonDisplaylist";
 
 class PokemonContainer extends Component {
   render() {
     return (
       <div className="row">
         <div className="col">
-          <PokemonList />
+          <PokemonDisplaylist />
         </div>
       </div>
     );

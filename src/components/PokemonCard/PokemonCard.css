@@ -1,0 +1,19 @@
+.img {
+  padding: 30px;
+  margin: 10px;
+  text-align: center !important;
+}
+
+.description {
+  font-size: 0.8em;
+}
+
+.card-container {
+  display: flex;
+  align-items: stretch;
+}
+
+.pokemon-name,
+.pokemon-stat-title {
+  font-weight: 700;
+}

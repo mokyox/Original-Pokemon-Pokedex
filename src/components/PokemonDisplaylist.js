@@ -1,8 +1,8 @@
 import React, { Component } from "react";
 import axios from "axios";
-import PokemonCard from "./PokemonCard";
+import PokemonCard from "./PokemonCard/PokemonCard";
 
-class PokemonList extends Component {
+class PokemonDisplaylist extends Component {
   constructor() {
     super();
     this.state = {
@@ -12,19 +12,12 @@ class PokemonList extends Component {
   }
 
   async componentDidMount() {
-    //Multiple API calls? Use Promise.all([promise, promise2, promise3,])
+    const url = "https://pokeapi.co/api/v2/pokemon/?limit=151";
 
-    const urls = [
-      "https://pokeapi.co/api/v2/pokemon/?limit=28",
-      "https://pokeapi.co/api/v2/pokemon-species/"
-    ];
-    const pokemonData = await axios.get(urls[0]);
-    const pokemonSpecies = await axios.get(urls[1]);
+    const pokemonData = await axios.get(url);
 
     this.setState({
-      pokemon: pokemonData.data["results"],
-      description: pokemonSpecies.data["results"]
-      //How can I get map over the value for description and feed the data as props for my Pokemon card component?
+      pokemon: pokemonData.data["results"]
     });
   }
   onSearchChange = event => {
@@ -32,7 +25,7 @@ class PokemonList extends Component {
     this.setState({ searchbardata: event.target.value });
   };
   render() {
-    //Feature: Searchbox that allows you to search for individual Pokemon
+    //Feature idea: Searchbox that allows you to search for individual Pokemon by name or type
     // const pokemonFiltered = this.state.pokemon.filter(pokemon => {
     //   return pokemon.name
     //     .toLowerCase()
@@ -60,4 +53,4 @@ class PokemonList extends Component {
     );
   }
 }
-export default PokemonList;
+export default PokemonDisplaylist;
