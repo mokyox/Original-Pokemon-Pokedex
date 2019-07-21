@@ -9,12 +9,8 @@
 }
 
 .card-container {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-align: stretch;
-      -ms-flex-align: stretch;
-          align-items: stretch;
+  align-items: stretch;
 }
 
 .pokemon-name,
@@ -30,8 +26,7 @@
 
 .pokemon-stat-title {
   padding: 5px 0px;
-}
-
-.pokemon-stat-title span {
-  font-weight: 400;
+  span {
+    font-weight: 400;
+  }
 }
