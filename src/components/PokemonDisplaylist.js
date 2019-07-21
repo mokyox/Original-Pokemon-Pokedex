@@ -12,7 +12,7 @@ class PokemonDisplaylist extends Component {
   }
 
   async componentDidMount() {
-    const url = "https://pokeapi.co/api/v2/pokemon/?limit=200";
+    const url = "https://pokeapi.co/api/v2/pokemon/?limit=151";
     const pokemonData = await axios.get(url);
 
     this.setState({
