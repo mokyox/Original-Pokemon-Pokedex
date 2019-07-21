@@ -5,7 +5,7 @@
 }
 
 .description {
-  font-size: 0.8em;
+  font-size: 0.85em;
 }
 
 .card-container {
@@ -14,6 +14,20 @@
 }
 
 .pokemon-name,
-.pokemon-stat-title {
+.pokemon-stat-title,
+.pokemon-stats {
   font-weight: 700;
+}
+
+.pokemon-stats {
+  font-size: 1.5em;
+  margin-bottom: 15px;
+}
+
+.pokemon-stat-title {
+  padding: 5px 0px;
+}
+
+.pokemon-stat-title > span {
+  font-weight: 400;
 }

@@ -73,13 +73,50 @@ class PokemonCard extends Component {
       return description;
     });
 
+    //Get HP, Attack, Defense, Special Attack, Special Defense and Speed
+    let hp = "";
+    let attack = "";
+    let defense = "";
+    let specialAttack = "";
+    let specialDefense = "";
+    let speed = "";
+
+    pokemonDataResponse.data.stats.reverse().map(stat => {
+      //Use switch/case instead of many if statements? https://www.geeksforgeeks.org/switch-vs-else/
+      if (stat.stat.name === "hp") {
+        hp = stat.base_stat;
+      }
+      if (stat.stat.name === "attack") {
+        attack = stat.base_stat;
+      }
+      if (stat.stat.name === "defense") {
+        defense = stat.base_stat;
+      }
+      if (stat.stat.name === "special-attack") {
+        specialAttack = stat.base_stat;
+      }
+      if (stat.stat.name === "special-defense") {
+        specialDefense = stat.base_stat;
+      }
+      if (stat.stat.name === "speed") {
+        speed = stat.base_stat;
+      }
+      return "";
+    });
+
     this.setState({
       name: name,
       pokemonNumber: pokemonNumber,
       image: image,
       description: description,
       type: type,
-      ability: ability
+      ability: ability,
+      hp: hp,
+      attack: attack,
+      defense: defense,
+      specialAttack: specialAttack,
+      specialDefense: specialDefense,
+      speed: speed
     });
   }
   render() {
@@ -89,7 +126,13 @@ class PokemonCard extends Component {
       pokemonNumber,
       description,
       type,
-      ability
+      ability,
+      hp,
+      attack,
+      defense,
+      specialAttack,
+      specialDefense,
+      speed
     } = this.state;
     const upperCaseFirstChar = string =>
       string.charAt(0).toUpperCase() + string.substring(1);
@@ -116,16 +159,29 @@ class PokemonCard extends Component {
           <div className="card-body">
             <img src={image} alt={`pokemon: ${name}`} />
             <div className="card-title text-left">
-              <h5>Stats</h5>
-              <h6 className="pokemon-stat-title">Ability:</h6>
-              <span>{ability}</span>
-              <p className="pokemon-stat-title">HP</p>
-              <p className="pokemon-stat-title">Attack</p>
-              <p className="pokemon-stat-title">Defence</p>
-              <p className="pokemon-stat-title">Special Attack</p>
-              <p className="pokemon-stat-title">Special Defence</p>
-              <p className="pokemon-stat-title">Speed</p>
-              <p className="pokemon-state-title">Description:</p>
+              <h5 className="pokemon-stats">Stats</h5>
+              <h6 className="pokemon-stat-title">
+                Ability: <span>{ability}</span>
+              </h6>
+              <p className="pokemon-stat-title">
+                HP: <span>{hp}</span>
+              </p>
+              <p className="pokemon-stat-title">
+                Attack: <span>{attack}</span>
+              </p>{" "}
+              <p className="pokemon-stat-title">
+                Defense: <span>{defense}</span>
+              </p>
+              <p className="pokemon-stat-title">
+                Special Attack: <span>{specialAttack}</span>
+              </p>{" "}
+              <p className="pokemon-stat-title">
+                Special Defense: <span>{specialDefense}</span>
+              </p>{" "}
+              <p className="pokemon-stat-title">
+                Speed: <span>{speed}</span>
+              </p>
+              <p className="pokemon-stat-title">Description:</p>
               <span className="description">{description}</span>
             </div>
           </div>
