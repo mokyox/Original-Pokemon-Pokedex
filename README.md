@@ -1,3 +1,7 @@
+# React Pokedex
+
+I've been making a Pokedex with React to solidify my fundamentals in React. It's a work in progress at the moment and so there's alot that's subject to change - like improving the design, code and adding more features like a searchbox. Check back later to see more.
+
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
 ## Available Scripts
