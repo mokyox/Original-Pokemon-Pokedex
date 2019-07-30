@@ -44,7 +44,6 @@ class PokemonCard extends Component {
     const pokemonSpeciesDataUrl = `https://pokeapi.co/api/v2/pokemon-species/${pokemonNumber}/`;
     const pokemonDataResponse = await axios.get(pokemonDataUrl);
     const pokemonSpeciesDataResponse = await axios.get(pokemonSpeciesDataUrl);
-    console.log(url);
 
     //Get Abilities of Pokemon
     const ability = pokemonDataResponse.data.abilities
@@ -67,7 +66,6 @@ class PokemonCard extends Component {
     let description = "";
     pokemonSpeciesDataResponse.data.flavor_text_entries.some(text => {
       if (text.language.name === "en") {
-        // console.log(text.flavor_text);
         description = text.flavor_text;
       }
       return description;
