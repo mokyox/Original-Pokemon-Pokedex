@@ -38,12 +38,13 @@ class PokemonCard extends Component {
 
   async componentDidMount() {
     const { name, url } = this.props;
-    const pokemonNumber = url.replace(/^\D+/g, "").split("/")[2];
+    const pokemonNumber = url.replace(/^\D+/g, "").split("/")[2]; //url.slice(-2,-1)
     const image = `https://github.com/PokeAPI/sprites/blob/master/sprites/pokemon/${pokemonNumber}.png?raw=true`;
     const pokemonDataUrl = `https://pokeapi.co/api/v2/pokemon/${pokemonNumber}`;
     const pokemonSpeciesDataUrl = `https://pokeapi.co/api/v2/pokemon-species/${pokemonNumber}/`;
     const pokemonDataResponse = await axios.get(pokemonDataUrl);
     const pokemonSpeciesDataResponse = await axios.get(pokemonSpeciesDataUrl);
+
 
     //Get Abilities of Pokemon
     const ability = pokemonDataResponse.data.abilities
@@ -117,6 +118,7 @@ class PokemonCard extends Component {
       speed: speed
     });
   }
+
   render() {
     const {
       name,
@@ -140,6 +142,7 @@ class PokemonCard extends Component {
           <div className="text-nowrap p-1">
             <h4 className="pokemon-name">{upperCaseFirstChar(name)}</h4>
             <p>#{pokemonNumber}</p>
+      
             {type
               .map(type => (
                 <span
@@ -154,7 +157,8 @@ class PokemonCard extends Component {
               ))
               .reverse()}
           </div>
-          <div className="card-body">
+
+<div className="card-body">
             <img src={image} alt={`pokemon: ${name}`} />
             <div className="card-title text-left">
               <h5 className="pokemon-stats">Stats</h5>
@@ -183,8 +187,9 @@ class PokemonCard extends Component {
               <span className="description">{description}</span>
             </div>
           </div>
+          </div>
         </div>
-      </div>
+
     );
   }
 }

@@ -1,6 +1,6 @@
 import React from "react";
 
-const SearchBox = ({ searchChange }) => {
+const SearchBox = ({ searchChange, value }) => {
   return (
     <div className="text-center p-2 m-2">
       <form>
@@ -10,6 +10,7 @@ const SearchBox = ({ searchChange }) => {
             type="search"
             placeholder="Search Pokemon"
             onChange={searchChange}
+            value={value}
           />
         </div>
       </form>
