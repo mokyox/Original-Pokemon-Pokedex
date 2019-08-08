@@ -1,6 +1,5 @@
 import React, { Component } from "react";
 import "./PokemonCard.css";
-import axios from "axios";
 
 //https://bulbapedia.bulbagarden.net/wiki/Type
 const colors = {
@@ -36,86 +35,78 @@ class PokemonCard extends Component {
     };
   }
 
-  async componentDidMount() {
-    const { name, url } = this.props;
-    const pokemonNumber = url.replace(/^\D+/g, "").split("/")[2];
-    const image = `https://github.com/PokeAPI/sprites/blob/master/sprites/pokemon/${pokemonNumber}.png?raw=true`;
-    const pokemonDataUrl = `https://pokeapi.co/api/v2/pokemon/${pokemonNumber}`;
-    const pokemonSpeciesDataUrl = `https://pokeapi.co/api/v2/pokemon-species/${pokemonNumber}/`;
-    const pokemonDataResponse = await axios.get(pokemonDataUrl);
-    const pokemonSpeciesDataResponse = await axios.get(pokemonSpeciesDataUrl);
-
-    //Get Abilities of Pokemon
-    const ability = pokemonDataResponse.data.abilities
-      .map(ability => {
-        return ability.ability.name
-          .toLowerCase()
-          .split("-")
-          .map(str => str.charAt(0).toUpperCase() + str.substring(1))
-          .join(" ");
-      })
-      .join("/");
-
-    //Get Types of Pokemon
-
-    const type = pokemonDataResponse.data.types.map(type => {
-      return type.type.name;
-    });
-
-    //Get Description of Pokemon
-    let description = "";
-    pokemonSpeciesDataResponse.data.flavor_text_entries.some(text => {
-      if (text.language.name === "en") {
-        description = text.flavor_text;
-      }
-      return description;
-    });
-
-    //Get HP, Attack, Defense, Special Attack, Special Defense and Speed
-    let hp = "";
-    let attack = "";
-    let defense = "";
-    let specialAttack = "";
-    let specialDefense = "";
-    let speed = "";
-
-    pokemonDataResponse.data.stats.reverse().map(stat => {
-      //Use switch/case instead of many if statements? https://www.geeksforgeeks.org/switch-vs-else/
-      if (stat.stat.name === "hp") {
-        hp = stat.base_stat;
-      }
-      if (stat.stat.name === "attack") {
-        attack = stat.base_stat;
-      }
-      if (stat.stat.name === "defense") {
-        defense = stat.base_stat;
-      }
-      if (stat.stat.name === "special-attack") {
-        specialAttack = stat.base_stat;
-      }
-      if (stat.stat.name === "special-defense") {
-        specialDefense = stat.base_stat;
-      }
-      if (stat.stat.name === "speed") {
-        speed = stat.base_stat;
-      }
-      return "";
-    });
-
-    this.setState({
-      name: name,
-      pokemonNumber: pokemonNumber,
-      image: image,
-      description: description,
-      type: type,
-      ability: ability,
-      hp: hp,
-      attack: attack,
-      defense: defense,
-      specialAttack: specialAttack,
-      specialDefense: specialDefense,
-      speed: speed
-    });
+  componentDidMount() {
+    // const pokemonNumber = url.replace(/^\D+/g, "").split("/")[2];
+    // const image = `https://github.com/PokeAPI/sprites/blob/master/sprites/pokemon/${pokemonNumber}.png?raw=true`;
+    // const pokemonDataUrl = `https://pokeapi.co/api/v2/pokemon/${pokemonNumber}`;
+    // const pokemonSpeciesDataUrl = `https://pokeapi.co/api/v2/pokemon-species/${pokemonNumber}/`;
+    // const pokemonDataResponse = await axios.get(pokemonDataUrl);
+    // const pokemonSpeciesDataResponse = await axios.get(pokemonSpeciesDataUrl);
+    // //Get Abilities of Pokemon
+    // const ability = pokemonDataResponse.data.abilities
+    //   .map(ability => {
+    //     return ability.ability.name
+    //       .toLowerCase()
+    //       .split("-")
+    //       .map(str => str.charAt(0).toUpperCase() + str.substring(1))
+    //       .join(" ");
+    //   })
+    //   .join("/");
+    // //Get Types of Pokemon
+    // const type = pokemonDataResponse.data.types.map(type => {
+    //   return type.type.name;
+    // });
+    // //Get Description of Pokemon
+    // let description = "";
+    // pokemonSpeciesDataResponse.data.flavor_text_entries.some(text => {
+    //   if (text.language.name === "en") {
+    //     description = text.flavor_text;
+    //   }
+    //   return description;
+    // });
+    // //Get HP, Attack, Defense, Special Attack, Special Defense and Speed
+    // let hp = "";
+    // let attack = "";
+    // let defense = "";
+    // let specialAttack = "";
+    // let specialDefense = "";
+    // let speed = "";
+    // pokemonDataResponse.data.stats.reverse().map(stat => {
+    //   //Use switch/case instead of many if statements? https://www.geeksforgeeks.org/switch-vs-else/
+    //   if (stat.stat.name === "hp") {
+    //     hp = stat.base_stat;
+    //   }
+    //   if (stat.stat.name === "attack") {
+    //     attack = stat.base_stat;
+    //   }
+    //   if (stat.stat.name === "defense") {
+    //     defense = stat.base_stat;
+    //   }
+    //   if (stat.stat.name === "special-attack") {
+    //     specialAttack = stat.base_stat;
+    //   }
+    //   if (stat.stat.name === "special-defense") {
+    //     specialDefense = stat.base_stat;
+    //   }
+    //   if (stat.stat.name === "speed") {
+    //     speed = stat.base_stat;
+    //   }
+    //   return "";
+    // });
+    // this.setState({
+    //   name: name,
+    //   pokemonNumber: pokemonNumber,
+    //   image: image,
+    //   description: description,
+    //   type: type,
+    //   ability: ability,
+    //   hp: hp,
+    //   attack: attack,
+    //   defense: defense,
+    //   specialAttack: specialAttack,
+    //   specialDefense: specialDefense,
+    //   speed: speed
+    // });
   }
   render() {
     const {
@@ -131,7 +122,7 @@ class PokemonCard extends Component {
       specialAttack,
       specialDefense,
       speed
-    } = this.state;
+    } = this.props;
     const upperCaseFirstChar = string =>
       string.charAt(0).toUpperCase() + string.substring(1);
     return (
