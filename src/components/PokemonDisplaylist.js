@@ -52,7 +52,7 @@ class PokemonDisplaylist extends Component {
               key={pokemon.id}
               id={pokemon.id}
               name={pokemon.name.english}
-              image={`https://github.com/PokeAPI/sprites/blob/master/sprites/pokemon/${
+              image={`https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/${
                 pokemon.id
               }.png?raw=true`}
               hp={pokemon.base["HP"]}
