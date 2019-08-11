@@ -4,6 +4,7 @@ import PokemonCard from "./PokemonCard/PokemonCard";
 import SearchBox from "./searchbox";
 import pokedex from "./pokedex";
 import description from "./description";
+import abilities from "./abilities";
 
 class PokemonDisplaylist extends Component {
   constructor() {
@@ -18,7 +19,10 @@ class PokemonDisplaylist extends Component {
   async componentDidMount() {
     const pokemonData = pokedex;
     const pokemonDescription = description;
-    // const pokemonRes = await axios.get();
+    const pokemonAbilities = abilities;
+    console.log(pokemonAbilities.map(ability => ability));
+    //  abilities.map(ability => ability.ability.name)
+    // .join(" / ");
 
     console.log(pokedex[0].name.english);
     console.log(pokedex[0].type);
