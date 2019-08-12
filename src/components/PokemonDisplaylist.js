@@ -1,7 +1,5 @@
 import React, { Component } from "react";
-import axios from "axios";
 import PokemonCard from "./PokemonCard/PokemonCard";
-import SearchBox from "./searchbox";
 import pokedex from "./pokedex";
 import description from "./description";
 import abilities from "./abilities";
@@ -12,6 +10,7 @@ class PokemonDisplaylist extends Component {
     this.state = {
       pokemon: [],
       description: [],
+      ability: [],
       searchbardata: ""
     };
   }
@@ -19,15 +18,14 @@ class PokemonDisplaylist extends Component {
   async componentDidMount() {
     const pokemonData = pokedex;
     const pokemonDescription = description;
-    const pokemonAbilities = abilities;
-    console.log(pokemonAbilities.map(ability => ability));
-    //  abilities.map(ability => ability.ability.name)
-    // .join(" / ");
-
-    console.log(pokedex[0].name.english);
-    console.log(pokedex[0].type);
-
-    this.setState({ pokemon: pokemonData, description: pokemonDescription });
+    const pokemonAbilities = abilities.map(ability => {
+      return ability.map(ability => ability.ability.name).join(" / ");
+    });
+    this.setState({
+      pokemon: pokemonData,
+      description: pokemonDescription,
+      ability: pokemonAbilities
+    });
   }
 
   // onSearchChange = event => {
@@ -37,19 +35,14 @@ class PokemonDisplaylist extends Component {
   //   this.setState({ searchbardata: event.target.value });
   // };
   render() {
-    const { pokemon, description } = this.state;
+    const { pokemon, description, ability } = this.state;
     // const pokemonFiltered = this.state.pokemon.filter(pokemon => {
     //   return pokemon.name
     //     .toLowerCase()
     //     .includes(this.state.searchbardata.toLowerCase());
     // });
-    if (this.state.pokemon.length === 0) {
-      return <h1>Loading...</h1>;
-    }
-    console.log("We have", this.state.pokemon);
     return (
       <div>
-        <h1>Pokedex</h1>
         <div className="row">
           {pokemon.map(pokemon => (
             <PokemonCard
@@ -67,6 +60,7 @@ class PokemonDisplaylist extends Component {
               speed={pokemon.base["Speed"]}
               type={pokemon.type}
               description={description[pokemon.id - 1]}
+              ability={ability[pokemon.id - 1]}
             />
           ))}
         </div>
