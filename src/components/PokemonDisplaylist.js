@@ -1,49 +1,66 @@
 import React, { Component } from "react";
-import axios from "axios";
 import PokemonCard from "./PokemonCard/PokemonCard";
-import SearchBox from "./searchbox";
+import pokedex from "./pokedex";
+import description from "./description";
+import abilities from "./abilities";
 
 class PokemonDisplaylist extends Component {
   constructor() {
     super();
     this.state = {
       pokemon: [],
+      description: [],
+      ability: [],
       searchbardata: ""
     };
   }
 
   async componentDidMount() {
-    const url = "https://pokeapi.co/api/v2/pokemon/?limit=151";
-    const pokemonData = await axios.get(url);
-
+    const pokemonData = pokedex;
+    const pokemonDescription = description;
+    const pokemonAbilities = abilities.map(ability => {
+      return ability.map(ability => ability.ability.name).join(" / ");
+    });
     this.setState({
-      pokemon: pokemonData.data["results"]
+      pokemon: pokemonData,
+      description: pokemonDescription,
+      ability: pokemonAbilities
     });
   }
-  onSearchChange = event => {
-    //update state of searchbardata so we can see our pokemon
-    //Arrow functions make sure that the this value is bound to where it was created
-    this.setState({ searchbardata: event.target.value });
-  };
+
+  // onSearchChange = event => {
+  //   //update state of searchbardata so we can see our pokemon
+  //   //Arrow functions make sure that the this value is bound to where it was created
+  //   console.log("data: " + this.state.searchbardata);
+  //   this.setState({ searchbardata: event.target.value });
+  // };
   render() {
-    const pokemonFiltered = this.state.pokemon.filter(pokemon => {
-      return pokemon.name
-        .toLowerCase()
-        .includes(this.state.searchbardata.toLowerCase());
-    });
-    if (this.state.pokemon.length === 0) {
-      return <h1>Loading...</h1>;
-    }
+    const { pokemon, description, ability } = this.state;
+    // const pokemonFiltered = this.state.pokemon.filter(pokemon => {
+    //   return pokemon.name
+    //     .toLowerCase()
+    //     .includes(this.state.searchbardata.toLowerCase());
+    // });
     return (
       <div>
-        <h1>Pokedex</h1>
-        {<SearchBox searchChange={this.onSearchChange} />}
-        <div className="row ">
-          {pokemonFiltered.map(pokemon => (
+        <div className="row">
+          {pokemon.map(pokemon => (
             <PokemonCard
-              key={pokemon.name}
-              name={pokemon.name}
-              url={pokemon.url}
+              key={pokemon.id}
+              id={pokemon.id}
+              name={pokemon.name.english}
+              image={`https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/${
+                pokemon.id
+              }.png?raw=true`}
+              hp={pokemon.base["HP"]}
+              attack={pokemon.base["Attack"]}
+              defense={pokemon.base["Defense"]}
+              specialAttack={pokemon.base["Sp. Attack"]}
+              specialDefense={pokemon.base["Sp. Defense"]}
+              speed={pokemon.base["Speed"]}
+              type={pokemon.type}
+              description={description[pokemon.id - 1]}
+              ability={ability[pokemon.id - 1]}
             />
           ))}
         </div>
