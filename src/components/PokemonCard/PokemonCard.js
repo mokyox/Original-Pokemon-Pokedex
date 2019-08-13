@@ -25,7 +25,7 @@ const PokemonCard = ({
     Rock: "#B8A038",
     Bug: "#A8B820",
     Ghost: "#705898",
-    Steel: "##B8B8D0",
+    Steel: "#B8B8D0",
     Fire: "#F08030",
     Water: "#6890F0",
     Grass: "#78C850",
