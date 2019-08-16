@@ -1,17 +1,30 @@
 import React, { Component } from "react";
+import { connect } from "react-redux";
 import PokemonCard from "./PokemonCard/PokemonCard";
 import pokedex from "./pokedex";
 import description from "./description";
 import abilities from "./abilities";
+import { setSearchField } from "./actions/actions";
+import Navbar from "./navbar";
 
+const mapStateToProps = state => {
+  return {
+    searchField: state.searchField
+  };
+};
+
+const mapDispatchToProps = dispatch => {
+  return {
+    onSearchChange: event => dispatch(setSearchField(event.target.value))
+  };
+};
 class PokemonDisplaylist extends Component {
   constructor() {
     super();
     this.state = {
       pokemon: [],
       description: [],
-      ability: [],
-      searchbardata: ""
+      ability: []
     };
   }
 
@@ -28,23 +41,21 @@ class PokemonDisplaylist extends Component {
     });
   }
 
-  // onSearchChange = event => {
-  //   //update state of searchbardata so we can see our pokemon
-  //   //Arrow functions make sure that the this value is bound to where it was created
-  //   console.log("data: " + this.state.searchbardata);
-  //   this.setState({ searchbardata: event.target.value });
-  // };
   render() {
-    const { pokemon, description, ability } = this.state;
-    // const pokemonFiltered = this.state.pokemon.filter(pokemon => {
-    //   return pokemon.name
-    //     .toLowerCase()
-    //     .includes(this.state.searchbardata.toLowerCase());
-    // });
+    const { description, ability } = this.state;
+    const { searchField, onSearchChange } = this.props;
+
+    const pokemonFiltered = this.state.pokemon.filter(pokemon => {
+      return pokemon.name.english
+        .toLowerCase()
+        .includes(searchField.toLowerCase());
+    });
+
     return (
       <div>
         <div className="row">
-          {pokemon.map(pokemon => (
+          <Navbar searchChange={onSearchChange} />
+          {pokemonFiltered.map(pokemon => (
             <PokemonCard
               key={pokemon.id}
               id={pokemon.id}
@@ -68,4 +79,7 @@ class PokemonDisplaylist extends Component {
     );
   }
 }
-export default PokemonDisplaylist;
+export default connect(
+  mapStateToProps,
+  mapDispatchToProps
+)(PokemonDisplaylist);
