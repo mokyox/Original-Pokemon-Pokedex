@@ -1,6 +1,6 @@
 # React Pokedex
 
-#### A Pokedex written using React and Redux, complete with a searchbox for live searching.
+#### A Pokedex written using React and Redux, complete with a searchbox for live searching. [View here.](https://mokyoxpokedexreact.netlify.com/)
 
 I've been making a Pokedex with React to solidify my fundamentals in React. I went through many iterations such as using [PokeAPI](https://pokeapi.co/) to call the data I needed for the Pokemon to the most current version, where data is stored as local files. I also added Redux in order to better manage the state of the Pokemon and to allow me to use a searchbox in the navbar.
 
