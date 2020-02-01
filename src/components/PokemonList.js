@@ -1,9 +1,9 @@
 import React, { useState, useEffect } from "react";
 import { connect } from "react-redux";
 import PokemonCard from "./PokemonCard/PokemonCard";
-import pokedex from "./pokedex";
-import descriptions from "./descriptions";
-import abilities from "./abilities";
+import pokedex from "./data/pokedex";
+import descriptions from "./data/descriptions";
+import abilities from "./data/abilities";
 import { setSearchField } from "./actions/actions";
 import Navbar from "./navbar";
 
