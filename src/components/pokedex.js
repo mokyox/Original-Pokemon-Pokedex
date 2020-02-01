@@ -3,8 +3,6 @@ const pokemonJson = [
     "id": 1,
     "name": {
       "english": "Bulbasaur",
-      "japanese": "フシギダネ",
-      "chinese": "妙蛙种子"
     },
     "type": [
       "Grass",
@@ -23,8 +21,6 @@ const pokemonJson = [
     "id": 2,
     "name": {
       "english": "Ivysaur",
-      "japanese": "フシギソウ",
-      "chinese": "妙蛙草"
     },
     "type": [
       "Grass",
@@ -43,8 +39,6 @@ const pokemonJson = [
     "id": 3,
     "name": {
       "english": "Venusaur",
-      "japanese": "フシギバナ",
-      "chinese": "妙蛙花"
     },
     "type": [
       "Grass",
@@ -63,8 +57,6 @@ const pokemonJson = [
     "id": 4,
     "name": {
       "english": "Charmander",
-      "japanese": "ヒトカゲ",
-      "chinese": "小火龙"
     },
     "type": [
       "Fire"
@@ -82,8 +74,6 @@ const pokemonJson = [
     "id": 5,
     "name": {
       "english": "Charmeleon",
-      "japanese": "リザード",
-      "chinese": "火恐龙"
     },
     "type": [
       "Fire"
@@ -101,8 +91,6 @@ const pokemonJson = [
     "id": 6,
     "name": {
       "english": "Charizard",
-      "japanese": "リザードン",
-      "chinese": "喷火龙"
     },
     "type": [
       "Fire",
@@ -121,8 +109,6 @@ const pokemonJson = [
     "id": 7,
     "name": {
       "english": "Squirtle",
-      "japanese": "ゼニガメ",
-      "chinese": "杰尼龟"
     },
     "type": [
       "Water"
@@ -140,8 +126,6 @@ const pokemonJson = [
     "id": 8,
     "name": {
       "english": "Wartortle",
-      "japanese": "カメール",
-      "chinese": "卡咪龟"
     },
     "type": [
       "Water"
@@ -159,8 +143,6 @@ const pokemonJson = [
     "id": 9,
     "name": {
       "english": "Blastoise",
-      "japanese": "カメックス",
-      "chinese": "水箭龟"
     },
     "type": [
       "Water"
@@ -178,8 +160,6 @@ const pokemonJson = [
     "id": 10,
     "name": {
       "english": "Caterpie",
-      "japanese": "キャタピー",
-      "chinese": "绿毛虫"
     },
     "type": [
       "Bug"
@@ -197,8 +177,6 @@ const pokemonJson = [
     "id": 11,
     "name": {
       "english": "Metapod",
-      "japanese": "トランセル",
-      "chinese": "铁甲蛹"
     },
     "type": [
       "Bug"
@@ -216,8 +194,6 @@ const pokemonJson = [
     "id": 12,
     "name": {
       "english": "Butterfree",
-      "japanese": "バタフリー",
-      "chinese": "巴大蝶"
     },
     "type": [
       "Bug",
@@ -236,8 +212,6 @@ const pokemonJson = [
     "id": 13,
     "name": {
       "english": "Weedle",
-      "japanese": "ビードル",
-      "chinese": "独角虫"
     },
     "type": [
       "Bug",
@@ -256,8 +230,6 @@ const pokemonJson = [
     "id": 14,
     "name": {
       "english": "Kakuna",
-      "japanese": "コクーン",
-      "chinese": "铁壳蛹"
     },
     "type": [
       "Bug",
@@ -276,8 +248,6 @@ const pokemonJson = [
     "id": 15,
     "name": {
       "english": "Beedrill",
-      "japanese": "スピアー",
-      "chinese": "大针蜂"
     },
     "type": [
       "Bug",
@@ -296,8 +266,6 @@ const pokemonJson = [
     "id": 16,
     "name": {
       "english": "Pidgey",
-      "japanese": "ポッポ",
-      "chinese": "波波"
     },
     "type": [
       "Normal",
@@ -316,8 +284,6 @@ const pokemonJson = [
     "id": 17,
     "name": {
       "english": "Pidgeotto",
-      "japanese": "ピジョン",
-      "chinese": "比比鸟"
     },
     "type": [
       "Normal",
@@ -336,8 +302,6 @@ const pokemonJson = [
     "id": 18,
     "name": {
       "english": "Pidgeot",
-      "japanese": "ピジョット",
-      "chinese": "大比鸟"
     },
     "type": [
       "Normal",
@@ -356,8 +320,6 @@ const pokemonJson = [
     "id": 19,
     "name": {
       "english": "Rattata",
-      "japanese": "コラッタ",
-      "chinese": "小拉达"
     },
     "type": [
       "Normal"
@@ -375,8 +337,6 @@ const pokemonJson = [
     "id": 20,
     "name": {
       "english": "Raticate",
-      "japanese": "ラッタ",
-      "chinese": "拉达"
     },
     "type": [
       "Normal"
@@ -394,8 +354,6 @@ const pokemonJson = [
     "id": 21,
     "name": {
       "english": "Spearow",
-      "japanese": "オニスズメ",
-      "chinese": "烈雀"
     },
     "type": [
       "Normal",
@@ -414,8 +372,6 @@ const pokemonJson = [
     "id": 22,
     "name": {
       "english": "Fearow",
-      "japanese": "オニドリル",
-      "chinese": "大嘴雀"
     },
     "type": [
       "Normal",
@@ -434,8 +390,6 @@ const pokemonJson = [
     "id": 23,
     "name": {
       "english": "Ekans",
-      "japanese": "アーボ",
-      "chinese": "阿柏蛇"
     },
     "type": [
       "Poison"
@@ -453,8 +407,6 @@ const pokemonJson = [
     "id": 24,
     "name": {
       "english": "Arbok",
-      "japanese": "アーボック",
-      "chinese": "阿柏怪"
     },
     "type": [
       "Poison"
@@ -472,8 +424,6 @@ const pokemonJson = [
     "id": 25,
     "name": {
       "english": "Pikachu",
-      "japanese": "ピカチュウ",
-      "chinese": "皮卡丘"
     },
     "type": [
       "Electric"
@@ -491,8 +441,6 @@ const pokemonJson = [
     "id": 26,
     "name": {
       "english": "Raichu",
-      "japanese": "ライチュウ",
-      "chinese": "雷丘"
     },
     "type": [
       "Electric"
@@ -510,8 +458,6 @@ const pokemonJson = [
     "id": 27,
     "name": {
       "english": "Sandshrew",
-      "japanese": "サンド",
-      "chinese": "穿山鼠"
     },
     "type": [
       "Ground"
@@ -529,8 +475,6 @@ const pokemonJson = [
     "id": 28,
     "name": {
       "english": "Sandslash",
-      "japanese": "サンドパン",
-      "chinese": "穿山王"
     },
     "type": [
       "Ground"
@@ -548,8 +492,6 @@ const pokemonJson = [
     "id": 29,
     "name": {
       "english": "Nidoran♀",
-      "japanese": "ニドラン♀",
-      "chinese": "尼多兰"
     },
     "type": [
       "Poison"
@@ -567,8 +509,6 @@ const pokemonJson = [
     "id": 30,
     "name": {
       "english": "Nidorina",
-      "japanese": "ニドリーナ",
-      "chinese": "尼多娜"
     },
     "type": [
       "Poison"
@@ -586,8 +526,6 @@ const pokemonJson = [
     "id": 31,
     "name": {
       "english": "Nidoqueen",
-      "japanese": "ニドクイン",
-      "chinese": "尼多后"
     },
     "type": [
       "Poison",
@@ -606,8 +544,6 @@ const pokemonJson = [
     "id": 32,
     "name": {
       "english": "Nidoran♂",
-      "japanese": "ニドラン♂",
-      "chinese": "尼多朗"
     },
     "type": [
       "Poison"
@@ -625,8 +561,6 @@ const pokemonJson = [
     "id": 33,
     "name": {
       "english": "Nidorino",
-      "japanese": "ニドリーノ",
-      "chinese": "尼多力诺"
     },
     "type": [
       "Poison"
@@ -644,8 +578,6 @@ const pokemonJson = [
     "id": 34,
     "name": {
       "english": "Nidoking",
-      "japanese": "ニドキング",
-      "chinese": "尼多王"
     },
     "type": [
       "Poison",
@@ -664,8 +596,6 @@ const pokemonJson = [
     "id": 35,
     "name": {
       "english": "Clefairy",
-      "japanese": "ピッピ",
-      "chinese": "皮皮"
     },
     "type": [
       "Fairy"
@@ -683,8 +613,6 @@ const pokemonJson = [
     "id": 36,
     "name": {
       "english": "Clefable",
-      "japanese": "ピクシー",
-      "chinese": "皮可西"
     },
     "type": [
       "Fairy"
@@ -702,8 +630,6 @@ const pokemonJson = [
     "id": 37,
     "name": {
       "english": "Vulpix",
-      "japanese": "ロコン",
-      "chinese": "六尾"
     },
     "type": [
       "Fire"
@@ -721,8 +647,6 @@ const pokemonJson = [
     "id": 38,
     "name": {
       "english": "Ninetales",
-      "japanese": "キュウコン",
-      "chinese": "九尾"
     },
     "type": [
       "Fire"
@@ -740,8 +664,6 @@ const pokemonJson = [
     "id": 39,
     "name": {
       "english": "Jigglypuff",
-      "japanese": "プリン",
-      "chinese": "胖丁"
     },
     "type": [
       "Normal",
@@ -760,8 +682,6 @@ const pokemonJson = [
     "id": 40,
     "name": {
       "english": "Wigglytuff",
-      "japanese": "プクリン",
-      "chinese": "胖可丁"
     },
     "type": [
       "Normal",
@@ -780,8 +700,6 @@ const pokemonJson = [
     "id": 41,
     "name": {
       "english": "Zubat",
-      "japanese": "ズバット",
-      "chinese": "超音蝠"
     },
     "type": [
       "Poison",
@@ -800,8 +718,6 @@ const pokemonJson = [
     "id": 42,
     "name": {
       "english": "Golbat",
-      "japanese": "ゴルバット",
-      "chinese": "大嘴蝠"
     },
     "type": [
       "Poison",
@@ -820,8 +736,6 @@ const pokemonJson = [
     "id": 43,
     "name": {
       "english": "Oddish",
-      "japanese": "ナゾノクサ",
-      "chinese": "走路草"
     },
     "type": [
       "Grass",
@@ -840,8 +754,6 @@ const pokemonJson = [
     "id": 44,
     "name": {
       "english": "Gloom",
-      "japanese": "クサイハナ",
-      "chinese": "臭臭花"
     },
     "type": [
       "Grass",
@@ -860,8 +772,6 @@ const pokemonJson = [
     "id": 45,
     "name": {
       "english": "Vileplume",
-      "japanese": "ラフレシア",
-      "chinese": "霸王花"
     },
     "type": [
       "Grass",
@@ -880,8 +790,6 @@ const pokemonJson = [
     "id": 46,
     "name": {
       "english": "Paras",
-      "japanese": "パラス",
-      "chinese": "派拉斯"
     },
     "type": [
       "Bug",
@@ -900,8 +808,6 @@ const pokemonJson = [
     "id": 47,
     "name": {
       "english": "Parasect",
-      "japanese": "パラセクト",
-      "chinese": "派拉斯特"
     },
     "type": [
       "Bug",
@@ -920,8 +826,6 @@ const pokemonJson = [
     "id": 48,
     "name": {
       "english": "Venonat",
-      "japanese": "コンパン",
-      "chinese": "毛球"
     },
     "type": [
       "Bug",
@@ -940,8 +844,6 @@ const pokemonJson = [
     "id": 49,
     "name": {
       "english": "Venomoth",
-      "japanese": "モルフォン",
-      "chinese": "摩鲁蛾"
     },
     "type": [
       "Bug",
@@ -960,8 +862,6 @@ const pokemonJson = [
     "id": 50,
     "name": {
       "english": "Diglett",
-      "japanese": "ディグダ",
-      "chinese": "地鼠"
     },
     "type": [
       "Ground"
@@ -979,8 +879,6 @@ const pokemonJson = [
     "id": 51,
     "name": {
       "english": "Dugtrio",
-      "japanese": "ダグトリオ",
-      "chinese": "三地鼠"
     },
     "type": [
       "Ground"
@@ -998,8 +896,6 @@ const pokemonJson = [
     "id": 52,
     "name": {
       "english": "Meowth",
-      "japanese": "ニャース",
-      "chinese": "喵喵"
     },
     "type": [
       "Normal"
@@ -1017,8 +913,6 @@ const pokemonJson = [
     "id": 53,
     "name": {
       "english": "Persian",
-      "japanese": "ペルシアン",
-      "chinese": "猫老大"
     },
     "type": [
       "Normal"
@@ -1036,8 +930,6 @@ const pokemonJson = [
     "id": 54,
     "name": {
       "english": "Psyduck",
-      "japanese": "コダック",
-      "chinese": "可达鸭"
     },
     "type": [
       "Water"
@@ -1055,8 +947,6 @@ const pokemonJson = [
     "id": 55,
     "name": {
       "english": "Golduck",
-      "japanese": "ゴルダック",
-      "chinese": "哥达鸭"
     },
     "type": [
       "Water"
@@ -1074,8 +964,6 @@ const pokemonJson = [
     "id": 56,
     "name": {
       "english": "Mankey",
-      "japanese": "マンキー",
-      "chinese": "猴怪"
     },
     "type": [
       "Fighting"
@@ -1093,8 +981,6 @@ const pokemonJson = [
     "id": 57,
     "name": {
       "english": "Primeape",
-      "japanese": "オコリザル",
-      "chinese": "火暴猴"
     },
     "type": [
       "Fighting"
@@ -1112,8 +998,6 @@ const pokemonJson = [
     "id": 58,
     "name": {
       "english": "Growlithe",
-      "japanese": "ガーディ",
-      "chinese": "卡蒂狗"
     },
     "type": [
       "Fire"
@@ -1131,8 +1015,6 @@ const pokemonJson = [
     "id": 59,
     "name": {
       "english": "Arcanine",
-      "japanese": "ウインディ",
-      "chinese": "风速狗"
     },
     "type": [
       "Fire"
@@ -1150,8 +1032,6 @@ const pokemonJson = [
     "id": 60,
     "name": {
       "english": "Poliwag",
-      "japanese": "ニョロモ",
-      "chinese": "蚊香蝌蚪"
     },
     "type": [
       "Water"
@@ -1169,8 +1049,6 @@ const pokemonJson = [
     "id": 61,
     "name": {
       "english": "Poliwhirl",
-      "japanese": "ニョロゾ",
-      "chinese": "蚊香君"
     },
     "type": [
       "Water"
@@ -1188,8 +1066,6 @@ const pokemonJson = [
     "id": 62,
     "name": {
       "english": "Poliwrath",
-      "japanese": "ニョロボン",
-      "chinese": "蚊香泳士"
     },
     "type": [
       "Water",
@@ -1208,8 +1084,6 @@ const pokemonJson = [
     "id": 63,
     "name": {
       "english": "Abra",
-      "japanese": "ケーシィ",
-      "chinese": "凯西"
     },
     "type": [
       "Psychic"
@@ -1227,8 +1101,6 @@ const pokemonJson = [
     "id": 64,
     "name": {
       "english": "Kadabra",
-      "japanese": "ユンゲラー",
-      "chinese": "勇基拉"
     },
     "type": [
       "Psychic"
@@ -1246,8 +1118,6 @@ const pokemonJson = [
     "id": 65,
     "name": {
       "english": "Alakazam",
-      "japanese": "フーディン",
-      "chinese": "胡地"
     },
     "type": [
       "Psychic"
@@ -1265,8 +1135,6 @@ const pokemonJson = [
     "id": 66,
     "name": {
       "english": "Machop",
-      "japanese": "ワンリキー",
-      "chinese": "腕力"
     },
     "type": [
       "Fighting"
@@ -1284,8 +1152,6 @@ const pokemonJson = [
     "id": 67,
     "name": {
       "english": "Machoke",
-      "japanese": "ゴーリキー",
-      "chinese": "豪力"
     },
     "type": [
       "Fighting"
@@ -1303,8 +1169,6 @@ const pokemonJson = [
     "id": 68,
     "name": {
       "english": "Machamp",
-      "japanese": "カイリキー",
-      "chinese": "怪力"
     },
     "type": [
       "Fighting"
@@ -1322,8 +1186,6 @@ const pokemonJson = [
     "id": 69,
     "name": {
       "english": "Bellsprout",
-      "japanese": "マダツボミ",
-      "chinese": "喇叭芽"
     },
     "type": [
       "Grass",
@@ -1342,8 +1204,6 @@ const pokemonJson = [
     "id": 70,
     "name": {
       "english": "Weepinbell",
-      "japanese": "ウツドン",
-      "chinese": "口呆花"
     },
     "type": [
       "Grass",
@@ -1362,8 +1222,6 @@ const pokemonJson = [
     "id": 71,
     "name": {
       "english": "Victreebel",
-      "japanese": "ウツボット",
-      "chinese": "大食花"
     },
     "type": [
       "Grass",
@@ -1382,8 +1240,6 @@ const pokemonJson = [
     "id": 72,
     "name": {
       "english": "Tentacool",
-      "japanese": "メノクラゲ",
-      "chinese": "玛瑙水母"
     },
     "type": [
       "Water",
@@ -1402,8 +1258,6 @@ const pokemonJson = [
     "id": 73,
     "name": {
       "english": "Tentacruel",
-      "japanese": "ドククラゲ",
-      "chinese": "毒刺水母"
     },
     "type": [
       "Water",
@@ -1422,8 +1276,6 @@ const pokemonJson = [
     "id": 74,
     "name": {
       "english": "Geodude",
-      "japanese": "イシツブテ",
-      "chinese": "小拳石"
     },
     "type": [
       "Rock",
@@ -1442,8 +1294,6 @@ const pokemonJson = [
     "id": 75,
     "name": {
       "english": "Graveler",
-      "japanese": "ゴローン",
-      "chinese": "隆隆石"
     },
     "type": [
       "Rock",
@@ -1462,8 +1312,6 @@ const pokemonJson = [
     "id": 76,
     "name": {
       "english": "Golem",
-      "japanese": "ゴローニャ",
-      "chinese": "隆隆岩"
     },
     "type": [
       "Rock",
@@ -1482,8 +1330,6 @@ const pokemonJson = [
     "id": 77,
     "name": {
       "english": "Ponyta",
-      "japanese": "ポニータ",
-      "chinese": "小火马"
     },
     "type": [
       "Fire"
@@ -1501,8 +1347,6 @@ const pokemonJson = [
     "id": 78,
     "name": {
       "english": "Rapidash",
-      "japanese": "ギャロップ",
-      "chinese": "烈焰马"
     },
     "type": [
       "Fire"
@@ -1520,8 +1364,6 @@ const pokemonJson = [
     "id": 79,
     "name": {
       "english": "Slowpoke",
-      "japanese": "ヤドン",
-      "chinese": "呆呆兽"
     },
     "type": [
       "Water",
@@ -1540,8 +1382,6 @@ const pokemonJson = [
     "id": 80,
     "name": {
       "english": "Slowbro",
-      "japanese": "ヤドラン",
-      "chinese": "呆壳兽"
     },
     "type": [
       "Water",
@@ -1560,8 +1400,6 @@ const pokemonJson = [
     "id": 81,
     "name": {
       "english": "Magnemite",
-      "japanese": "コイル",
-      "chinese": "小磁怪"
     },
     "type": [
       "Electric",
@@ -1580,8 +1418,6 @@ const pokemonJson = [
     "id": 82,
     "name": {
       "english": "Magneton",
-      "japanese": "レアコイル",
-      "chinese": "三合一磁怪"
     },
     "type": [
       "Electric",
@@ -1600,8 +1436,6 @@ const pokemonJson = [
     "id": 83,
     "name": {
       "english": "Farfetch'd",
-      "japanese": "カモネギ",
-      "chinese": "大葱鸭"
     },
     "type": [
       "Normal",
@@ -1620,8 +1454,6 @@ const pokemonJson = [
     "id": 84,
     "name": {
       "english": "Doduo",
-      "japanese": "ドードー",
-      "chinese": "嘟嘟"
     },
     "type": [
       "Normal",
@@ -1640,8 +1472,6 @@ const pokemonJson = [
     "id": 85,
     "name": {
       "english": "Dodrio",
-      "japanese": "ドードリオ",
-      "chinese": "嘟嘟利"
     },
     "type": [
       "Normal",
@@ -1660,8 +1490,6 @@ const pokemonJson = [
     "id": 86,
     "name": {
       "english": "Seel",
-      "japanese": "パウワウ",
-      "chinese": "小海狮"
     },
     "type": [
       "Water"
@@ -1679,8 +1507,6 @@ const pokemonJson = [
     "id": 87,
     "name": {
       "english": "Dewgong",
-      "japanese": "ジュゴン",
-      "chinese": "白海狮"
     },
     "type": [
       "Water",
@@ -1699,8 +1525,6 @@ const pokemonJson = [
     "id": 88,
     "name": {
       "english": "Grimer",
-      "japanese": "ベトベター",
-      "chinese": "臭泥"
     },
     "type": [
       "Poison"
@@ -1718,8 +1542,6 @@ const pokemonJson = [
     "id": 89,
     "name": {
       "english": "Muk",
-      "japanese": "ベトベトン",
-      "chinese": "臭臭泥"
     },
     "type": [
       "Poison"
@@ -1737,8 +1559,6 @@ const pokemonJson = [
     "id": 90,
     "name": {
       "english": "Shellder",
-      "japanese": "シェルダー",
-      "chinese": "大舌贝"
     },
     "type": [
       "Water"
@@ -1756,8 +1576,6 @@ const pokemonJson = [
     "id": 91,
     "name": {
       "english": "Cloyster",
-      "japanese": "パルシェン",
-      "chinese": "刺甲贝"
     },
     "type": [
       "Water",
@@ -1776,8 +1594,6 @@ const pokemonJson = [
     "id": 92,
     "name": {
       "english": "Gastly",
-      "japanese": "ゴース",
-      "chinese": "鬼斯"
     },
     "type": [
       "Ghost",
@@ -1796,8 +1612,6 @@ const pokemonJson = [
     "id": 93,
     "name": {
       "english": "Haunter",
-      "japanese": "ゴースト",
-      "chinese": "鬼斯通"
     },
     "type": [
       "Ghost",
@@ -1816,8 +1630,6 @@ const pokemonJson = [
     "id": 94,
     "name": {
       "english": "Gengar",
-      "japanese": "ゲンガー",
-      "chinese": "耿鬼"
     },
     "type": [
       "Ghost",
@@ -1836,8 +1648,6 @@ const pokemonJson = [
     "id": 95,
     "name": {
       "english": "Onix",
-      "japanese": "イワーク",
-      "chinese": "大岩蛇"
     },
     "type": [
       "Rock",
@@ -1856,8 +1666,6 @@ const pokemonJson = [
     "id": 96,
     "name": {
       "english": "Drowzee",
-      "japanese": "スリープ",
-      "chinese": "催眠貘"
     },
     "type": [
       "Psychic"
@@ -1875,8 +1683,6 @@ const pokemonJson = [
     "id": 97,
     "name": {
       "english": "Hypno",
-      "japanese": "スリーパー",
-      "chinese": "引梦貘人"
     },
     "type": [
       "Psychic"
@@ -1894,8 +1700,6 @@ const pokemonJson = [
     "id": 98,
     "name": {
       "english": "Krabby",
-      "japanese": "クラブ",
-      "chinese": "大钳蟹"
     },
     "type": [
       "Water"
@@ -1913,8 +1717,6 @@ const pokemonJson = [
     "id": 99,
     "name": {
       "english": "Kingler",
-      "japanese": "キングラー",
-      "chinese": "巨钳蟹"
     },
     "type": [
       "Water"
@@ -1932,8 +1734,6 @@ const pokemonJson = [
     "id": 100,
     "name": {
       "english": "Voltorb",
-      "japanese": "ビリリダマ",
-      "chinese": "霹雳电球"
     },
     "type": [
       "Electric"
@@ -1951,8 +1751,6 @@ const pokemonJson = [
     "id": 101,
     "name": {
       "english": "Electrode",
-      "japanese": "マルマイン",
-      "chinese": "顽皮雷弹"
     },
     "type": [
       "Electric"
@@ -1970,8 +1768,6 @@ const pokemonJson = [
     "id": 102,
     "name": {
       "english": "Exeggcute",
-      "japanese": "タマタマ",
-      "chinese": "蛋蛋"
     },
     "type": [
       "Grass",
@@ -1990,8 +1786,6 @@ const pokemonJson = [
     "id": 103,
     "name": {
       "english": "Exeggutor",
-      "japanese": "ナッシー",
-      "chinese": "椰蛋树"
     },
     "type": [
       "Grass",
@@ -2010,8 +1804,6 @@ const pokemonJson = [
     "id": 104,
     "name": {
       "english": "Cubone",
-      "japanese": "カラカラ",
-      "chinese": "卡拉卡拉"
     },
     "type": [
       "Ground"
@@ -2029,8 +1821,6 @@ const pokemonJson = [
     "id": 105,
     "name": {
       "english": "Marowak",
-      "japanese": "ガラガラ",
-      "chinese": "嘎啦嘎啦"
     },
     "type": [
       "Ground"
@@ -2048,8 +1838,6 @@ const pokemonJson = [
     "id": 106,
     "name": {
       "english": "Hitmonlee",
-      "japanese": "サワムラー",
-      "chinese": "飞腿郎"
     },
     "type": [
       "Fighting"
@@ -2067,8 +1855,6 @@ const pokemonJson = [
     "id": 107,
     "name": {
       "english": "Hitmonchan",
-      "japanese": "エビワラー",
-      "chinese": "快拳郎"
     },
     "type": [
       "Fighting"
@@ -2086,8 +1872,6 @@ const pokemonJson = [
     "id": 108,
     "name": {
       "english": "Lickitung",
-      "japanese": "ベロリンガ",
-      "chinese": "大舌头"
     },
     "type": [
       "Normal"
@@ -2105,8 +1889,6 @@ const pokemonJson = [
     "id": 109,
     "name": {
       "english": "Koffing",
-      "japanese": "ドガース",
-      "chinese": "瓦斯弹"
     },
     "type": [
       "Poison"
@@ -2124,8 +1906,6 @@ const pokemonJson = [
     "id": 110,
     "name": {
       "english": "Weezing",
-      "japanese": "マタドガス",
-      "chinese": "双弹瓦斯"
     },
     "type": [
       "Poison"
@@ -2143,8 +1923,6 @@ const pokemonJson = [
     "id": 111,
     "name": {
       "english": "Rhyhorn",
-      "japanese": "サイホーン",
-      "chinese": "独角犀牛"
     },
     "type": [
       "Ground",
@@ -2163,8 +1941,6 @@ const pokemonJson = [
     "id": 112,
     "name": {
       "english": "Rhydon",
-      "japanese": "サイドン",
-      "chinese": "钻角犀兽"
     },
     "type": [
       "Ground",
@@ -2183,8 +1959,6 @@ const pokemonJson = [
     "id": 113,
     "name": {
       "english": "Chansey",
-      "japanese": "ラッキー",
-      "chinese": "吉利蛋"
     },
     "type": [
       "Normal"
@@ -2202,8 +1976,6 @@ const pokemonJson = [
     "id": 114,
     "name": {
       "english": "Tangela",
-      "japanese": "モンジャラ",
-      "chinese": "蔓藤怪"
     },
     "type": [
       "Grass"
@@ -2221,8 +1993,6 @@ const pokemonJson = [
     "id": 115,
     "name": {
       "english": "Kangaskhan",
-      "japanese": "ガルーラ",
-      "chinese": "袋兽"
     },
     "type": [
       "Normal"
@@ -2240,8 +2010,6 @@ const pokemonJson = [
     "id": 116,
     "name": {
       "english": "Horsea",
-      "japanese": "タッツー",
-      "chinese": "墨海马"
     },
     "type": [
       "Water"
@@ -2259,8 +2027,6 @@ const pokemonJson = [
     "id": 117,
     "name": {
       "english": "Seadra",
-      "japanese": "シードラ",
-      "chinese": "海刺龙"
     },
     "type": [
       "Water"
@@ -2278,8 +2044,6 @@ const pokemonJson = [
     "id": 118,
     "name": {
       "english": "Goldeen",
-      "japanese": "トサキント",
-      "chinese": "角金鱼"
     },
     "type": [
       "Water"
@@ -2297,8 +2061,6 @@ const pokemonJson = [
     "id": 119,
     "name": {
       "english": "Seaking",
-      "japanese": "アズマオウ",
-      "chinese": "金鱼王"
     },
     "type": [
       "Water"
@@ -2316,8 +2078,6 @@ const pokemonJson = [
     "id": 120,
     "name": {
       "english": "Staryu",
-      "japanese": "ヒトデマン",
-      "chinese": "海星星"
     },
     "type": [
       "Water"
@@ -2335,8 +2095,6 @@ const pokemonJson = [
     "id": 121,
     "name": {
       "english": "Starmie",
-      "japanese": "スターミー",
-      "chinese": "宝石海星"
     },
     "type": [
       "Water",
@@ -2355,8 +2113,6 @@ const pokemonJson = [
     "id": 122,
     "name": {
       "english": "Mr. Mime",
-      "japanese": "バリヤード",
-      "chinese": "魔墙人偶"
     },
     "type": [
       "Psychic",
@@ -2375,8 +2131,6 @@ const pokemonJson = [
     "id": 123,
     "name": {
       "english": "Scyther",
-      "japanese": "ストライク",
-      "chinese": "飞天螳螂"
     },
     "type": [
       "Bug",
@@ -2395,8 +2149,6 @@ const pokemonJson = [
     "id": 124,
     "name": {
       "english": "Jynx",
-      "japanese": "ルージュラ",
-      "chinese": "迷唇姐"
     },
     "type": [
       "Ice",
@@ -2415,8 +2167,6 @@ const pokemonJson = [
     "id": 125,
     "name": {
       "english": "Electabuzz",
-      "japanese": "エレブー",
-      "chinese": "电击兽"
     },
     "type": [
       "Electric"
@@ -2434,8 +2184,6 @@ const pokemonJson = [
     "id": 126,
     "name": {
       "english": "Magmar",
-      "japanese": "ブーバー",
-      "chinese": "鸭嘴火兽"
     },
     "type": [
       "Fire"
@@ -2453,8 +2201,6 @@ const pokemonJson = [
     "id": 127,
     "name": {
       "english": "Pinsir",
-      "japanese": "カイロス",
-      "chinese": "凯罗斯"
     },
     "type": [
       "Bug"
@@ -2472,8 +2218,6 @@ const pokemonJson = [
     "id": 128,
     "name": {
       "english": "Tauros",
-      "japanese": "ケンタロス",
-      "chinese": "肯泰罗"
     },
     "type": [
       "Normal"
@@ -2491,8 +2235,6 @@ const pokemonJson = [
     "id": 129,
     "name": {
       "english": "Magikarp",
-      "japanese": "コイキング",
-      "chinese": "鲤鱼王"
     },
     "type": [
       "Water"
@@ -2510,8 +2252,6 @@ const pokemonJson = [
     "id": 130,
     "name": {
       "english": "Gyarados",
-      "japanese": "ギャラドス",
-      "chinese": "暴鲤龙"
     },
     "type": [
       "Water",
@@ -2530,8 +2270,6 @@ const pokemonJson = [
     "id": 131,
     "name": {
       "english": "Lapras",
-      "japanese": "ラプラス",
-      "chinese": "拉普拉斯"
     },
     "type": [
       "Water",
@@ -2550,8 +2288,6 @@ const pokemonJson = [
     "id": 132,
     "name": {
       "english": "Ditto",
-      "japanese": "メタモン",
-      "chinese": "百变怪"
     },
     "type": [
       "Normal"
@@ -2569,8 +2305,6 @@ const pokemonJson = [
     "id": 133,
     "name": {
       "english": "Eevee",
-      "japanese": "イーブイ",
-      "chinese": "伊布"
     },
     "type": [
       "Normal"
@@ -2588,8 +2322,6 @@ const pokemonJson = [
     "id": 134,
     "name": {
       "english": "Vaporeon",
-      "japanese": "シャワーズ",
-      "chinese": "水伊布"
     },
     "type": [
       "Water"
@@ -2607,8 +2339,6 @@ const pokemonJson = [
     "id": 135,
     "name": {
       "english": "Jolteon",
-      "japanese": "サンダース",
-      "chinese": "雷伊布"
     },
     "type": [
       "Electric"
@@ -2626,8 +2356,6 @@ const pokemonJson = [
     "id": 136,
     "name": {
       "english": "Flareon",
-      "japanese": "ブースター",
-      "chinese": "火伊布"
     },
     "type": [
       "Fire"
@@ -2645,8 +2373,6 @@ const pokemonJson = [
     "id": 137,
     "name": {
       "english": "Porygon",
-      "japanese": "ポリゴン",
-      "chinese": "多边兽"
     },
     "type": [
       "Normal"
@@ -2664,8 +2390,6 @@ const pokemonJson = [
     "id": 138,
     "name": {
       "english": "Omanyte",
-      "japanese": "オムナイト",
-      "chinese": "菊石兽"
     },
     "type": [
       "Rock",
@@ -2684,8 +2408,6 @@ const pokemonJson = [
     "id": 139,
     "name": {
       "english": "Omastar",
-      "japanese": "オムスター",
-      "chinese": "多刺菊石兽"
     },
     "type": [
       "Rock",
@@ -2704,8 +2426,6 @@ const pokemonJson = [
     "id": 140,
     "name": {
       "english": "Kabuto",
-      "japanese": "カブト",
-      "chinese": "化石盔"
     },
     "type": [
       "Rock",
@@ -2724,8 +2444,6 @@ const pokemonJson = [
     "id": 141,
     "name": {
       "english": "Kabutops",
-      "japanese": "カブトプス",
-      "chinese": "镰刀盔"
     },
     "type": [
       "Rock",
@@ -2744,8 +2462,6 @@ const pokemonJson = [
     "id": 142,
     "name": {
       "english": "Aerodactyl",
-      "japanese": "プテラ",
-      "chinese": "化石翼龙"
     },
     "type": [
       "Rock",
@@ -2764,8 +2480,6 @@ const pokemonJson = [
     "id": 143,
     "name": {
       "english": "Snorlax",
-      "japanese": "カビゴン",
-      "chinese": "卡比兽"
     },
     "type": [
       "Normal"
@@ -2783,8 +2497,6 @@ const pokemonJson = [
     "id": 144,
     "name": {
       "english": "Articuno",
-      "japanese": "フリーザー",
-      "chinese": "急冻鸟"
     },
     "type": [
       "Ice",
@@ -2803,8 +2515,6 @@ const pokemonJson = [
     "id": 145,
     "name": {
       "english": "Zapdos",
-      "japanese": "サンダー",
-      "chinese": "闪电鸟"
     },
     "type": [
       "Electric",
@@ -2823,8 +2533,6 @@ const pokemonJson = [
     "id": 146,
     "name": {
       "english": "Moltres",
-      "japanese": "ファイヤー",
-      "chinese": "火焰鸟"
     },
     "type": [
       "Fire",
@@ -2843,8 +2551,6 @@ const pokemonJson = [
     "id": 147,
     "name": {
       "english": "Dratini",
-      "japanese": "ミニリュウ",
-      "chinese": "迷你龙"
     },
     "type": [
       "Dragon"
@@ -2862,8 +2568,6 @@ const pokemonJson = [
     "id": 148,
     "name": {
       "english": "Dragonair",
-      "japanese": "ハクリュー",
-      "chinese": "哈克龙"
     },
     "type": [
       "Dragon"
@@ -2881,8 +2585,6 @@ const pokemonJson = [
     "id": 149,
     "name": {
       "english": "Dragonite",
-      "japanese": "カイリュー",
-      "chinese": "快龙"
     },
     "type": [
       "Dragon",
@@ -2901,8 +2603,6 @@ const pokemonJson = [
     "id": 150,
     "name": {
       "english": "Mewtwo",
-      "japanese": "ミュウツー",
-      "chinese": "超梦"
     },
     "type": [
       "Psychic"
@@ -2920,8 +2620,6 @@ const pokemonJson = [
     "id": 151,
     "name": {
       "english": "Mew",
-      "japanese": "ミュウ",
-      "chinese": "梦幻"
     },
     "type": [
       "Psychic"
