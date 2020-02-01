@@ -7,3 +7,6 @@ I've been making a Pokedex with React to solidify my fundamentals in React. I we
 Please feel free to send me a message or add an issue/pull request if you have any other questions about this project.
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+
+#### Update Feb 1st 2020
+- Updated to use Hooks instead of class-based components.
