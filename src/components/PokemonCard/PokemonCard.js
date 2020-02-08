@@ -33,7 +33,7 @@ const PokemonCard = ({
     Psychic: "#F85888",
     Ice: "#98D8D8",
     Dragon: "#7538FB",
-    Dark: "#70584",
+    Dark: "#705848",
     Fairy: "#EE99AC"
   };
   return (
