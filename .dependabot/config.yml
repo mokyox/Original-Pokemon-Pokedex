@@ -5,7 +5,7 @@ update_configs:
     update_schedule: "daily"
     automerged_updates:
       - match:
-          dependency_type: "development"
+          dependency_type: "all"
           # Supported dependency types:
           # - "development"
           # - "production"
@@ -23,4 +23,4 @@ update_configs:
           # - "all"
       - match:
           dependency_type: "production"
-          update_type: "semver:patch"
+          update_type: "semver:all"
