@@ -37,7 +37,7 @@ const PokemonCard = ({
             ))}
           </div>
           <div className="card-body">
-            <img src={image} alt={`pokemon: ${name}`} />
+            <img src={image} alt={`pokemon: ${name}`} loading="lazy" />
             <div className="card-title text-left">
               <h5 className="pokemon-stats">Stats</h5>
               <h6 className="pokemon-stat-title">
