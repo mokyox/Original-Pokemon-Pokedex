@@ -1,21 +1,21 @@
 import React, { useState, useEffect } from "react";
 import { connect } from "react-redux";
 import PokemonCard from "./PokemonCard/PokemonCard";
-import pokedex from "./data/pokedex";
-import descriptions from "./data/descriptions";
-import abilities from "./data/abilities";
+import pokedex from "../data/pokedex";
+import descriptions from "../data/descriptions";
+import abilities from "../data/abilities";
 import { setSearchField } from "./actions/actions";
 import Navbar from "./navbar";
 
-const mapStateToProps = state => {
+const mapStateToProps = (state) => {
   return {
-    searchField: state.searchField
+    searchField: state.searchField,
   };
 };
 
-const mapDispatchToProps = dispatch => {
+const mapDispatchToProps = (dispatch) => {
   return {
-    onSearchChange: event => dispatch(setSearchField(event.target.value))
+    onSearchChange: (event) => dispatch(setSearchField(event.target.value)),
   };
 };
 
@@ -26,28 +26,28 @@ const PokemonList = ({ searchField, onSearchChange }) => {
 
   useEffect(() => {
     //Get initial Pokemon data
-    function getPokemonData() {
+    const getPokemonData = () => {
       const pokemonData = pokedex;
       const pokemonDescription = descriptions;
-      const pokemonAbilities = abilities.map(ability => {
-        return ability.map(ability => ability.ability.name).join(" / ");
+      const pokemonAbilities = abilities.map((ability) => {
+        return ability.map((ability) => ability.ability.name).join(" / ");
       });
       setPokemon(pokemonData);
       setDescription(pokemonDescription);
       setAbility(pokemonAbilities);
-    }
+    };
     getPokemonData();
   }, []);
 
-  const pokemonFiltered = pokemon.filter(pokemon => {
+  const pokemonFiltered = pokemon.filter((pokemon) => {
     return pokemon.name.english
       .toLowerCase()
       .includes(searchField.toLowerCase());
   });
   return (
-    <div className='row'>
+    <div className="row">
       <Navbar searchChange={onSearchChange} />
-      {pokemonFiltered.map(pokemon => (
+      {pokemonFiltered.map((pokemon) => (
         <PokemonCard
           key={pokemon.id}
           id={pokemon.id}
