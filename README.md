@@ -1,12 +1,23 @@
-# React Pokedex
+# Original 151 Pokemon Pokedex
 
-#### A Pokedex written using React and Redux, complete with a searchbox for live searching. [View here.](https://mokyoxpokedexreact.netlify.com/)
+#### A Pokedex written using React, complete with a searchbox for live search. [View here.](https://mokyoxpokedexreact.netlify.com/)
 
-I've been making a Pokedex with React to solidify my fundamentals in React. I went through many iterations such as using [PokeAPI](https://pokeapi.co/) to call the data I needed for the Pokemon to the most current version, where data is stored as local files. I also added Redux in order to better manage the state of the Pokemon and to allow me to use a searchbox in the navbar.
+I initially made this project to solidify my knowledge in React. Since then I've been updating this with small improvements in code structure, quality as well as adding and replacing libraries such as Redux with React Context API.
 
-Please feel free to send me a message or add an issue/pull request if you have any other questions about this project.
+Currently I'm using data taken from [PokeAPI](https://pokeapi.co/) and stored into data files located in `src/data/`. I plan use a GraphQL based version of PokeAPI at some point in the future - any help/assistance is appreciated on that front.
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+Feel free to add an issue/pull request if you have any other questions about this project.
 
-#### Update Feb 1st 2020
-- Updated to use Hooks instead of class-based components.
+## [0.2.0] - 2020-04-21
+
+### Changed
+
+- Removed `.css` files and replaced with `styled-components`.
+- add `loading = lazy` for images in newer browsers
+- minor code structure improvements
+
+## [0.1.1] - 2020-02-02
+
+### Changed
+
+- Updated project to use React Hooks instead of class-based components.
