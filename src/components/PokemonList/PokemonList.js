@@ -10,6 +10,7 @@ const PokemonList = ({ searchTerm }) => {
     const [pokemon, setPokemon] = useState([]);
     const [description, setDescription] = useState([]);
     const [ability, setAbility] = useState([]);
+    const [isPokemonLoaded, setIsPokemonLoaded] = useState(false);
 
     useEffect(() => {
         //Get pokemon data
@@ -22,6 +23,7 @@ const PokemonList = ({ searchTerm }) => {
                     .join(" / ");
             })
         );
+        setIsPokemonLoaded(true);
     }, [setPokemon, setDescription, setAbility]);
 
     //This filtering is causing alot of re-renders
@@ -35,7 +37,7 @@ const PokemonList = ({ searchTerm }) => {
 
     return (
         <div className="row">
-            {!searchTerm.length && filteredPokemon !== [] ? (
+            {!isPokemonLoaded || filteredPokemon.length > 0 ? (
                 filteredPokemon.map((pokemon) => (
                     <PokemonCard
                         key={pokemon.id}
@@ -59,7 +61,7 @@ const PokemonList = ({ searchTerm }) => {
                         <div className="card-body">
                             <h3 className="card-title">
                                 <EmojiWrapper>
-                                    <span emoji role="img" aria-label="Scream">
+                                    <span role="img" aria-label="Scream">
                                         😱
                                     </span>
                                 </EmojiWrapper>

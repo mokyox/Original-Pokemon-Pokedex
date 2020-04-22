@@ -77,11 +77,9 @@ html {
 
  }
   
-
-
 h1 {
   font-weight: 700;
-  font-size: 1.75rem;
+  font-size: 1.3rem;
   color: #f3f3f3;
 }
 
@@ -89,14 +87,14 @@ h3 {
   font-size: 1.2rem;
 }
 
-
-
-
 .container {
-  margin-top: 75px;
-  padding-top: 20px;
+  margin-top: 100px;
+  padding: 3rem;
 }
 
+form {
+  font-size: 0.8rem;
+}
 `;
 
 export { GlobalStyle };
