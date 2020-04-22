@@ -1,5 +1,5 @@
 import React from "react";
-import { handleSubmit } from "./utils";
+import { handleSubmit } from "../utils";
 
 const Navbar = ({ searchChange }) => {
     return (
