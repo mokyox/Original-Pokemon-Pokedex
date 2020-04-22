@@ -1,7 +1,7 @@
 import React, { useState } from "react";
-import PokemonList from "../PokemonList/PokemonList";
-import { GlobalStyle } from "../../styles/styles";
-import Navbar from "../Navbar";
+import PokemonList from "./PokemonList/PokemonList";
+import { GlobalStyle } from "../styles/styles";
+import Navbar from "./Navbar";
 import "bootstrap/dist/css/bootstrap.css";
 
 const App = () => {
