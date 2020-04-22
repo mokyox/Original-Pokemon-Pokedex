@@ -1,8 +1,5 @@
 import React from "react";
-
-const handleSubmit = (event) => {
-    event.preventDefault();
-};
+import { handleSubmit } from "./utils";
 
 const Navbar = ({ searchChange }) => {
     return (
