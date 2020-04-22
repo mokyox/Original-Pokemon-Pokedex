@@ -8,7 +8,7 @@ const PokemonCardStyle = createGlobalStyle`
   }
 
   .description {
-    font-size: 0.85em;
+    font-size: 0.85rem;
   }
 
   .card-container {
@@ -24,7 +24,7 @@ const PokemonCardStyle = createGlobalStyle`
   }
 
   .pokemon-stats {
-    font-size: 1.5em;
+    font-size: 1.5rem;
     margin-bottom: 15px;
   }
 

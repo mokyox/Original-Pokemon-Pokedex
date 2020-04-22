@@ -5,7 +5,7 @@ const Navbar = ({ searchChange }) => {
     return (
         <div>
             <nav className="navbar navbar-dark bg-dark fixed-top">
-                <h1 className="navbar-brand">Pokedex</h1>
+                <h1>Pokedex</h1>
                 <form className="form-inline" onSubmit={handleSubmit}>
                     <input
                         className="form-control mr-sm-2"
