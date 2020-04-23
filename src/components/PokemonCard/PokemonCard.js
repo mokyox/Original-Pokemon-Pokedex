@@ -16,10 +16,27 @@ const PokemonCard = ({
     description,
     ability,
 }) => {
+    console.log(
+        name,
+        id,
+        image,
+        hp,
+        attack,
+        defense,
+        specialAttack,
+        specialDefense,
+        speed,
+        type,
+        description,
+        ability
+    );
     return (
         <>
             <PokemonCardStyle />
-            <div className="card-container col-lg-3 col-md-4 col-sm-6 col-12 mb-3">
+            <div
+                data-testid="pokemon-card"
+                className="card-container col-lg-3 col-md-4 col-sm-6 col-12 mb-3"
+            >
                 <div className="card bg-dark text-white">
                     <div className="text-nowrap p-1">
                         <h4 className="pokemon-name">{name}</h4>
