@@ -16,20 +16,6 @@ const PokemonCard = ({
     description,
     ability,
 }) => {
-    console.log(
-        name,
-        id,
-        image,
-        hp,
-        attack,
-        defense,
-        specialAttack,
-        specialDefense,
-        speed,
-        type,
-        description,
-        ability
-    );
     return (
         <>
             <PokemonCardStyle />
