@@ -1,10 +1,10 @@
 import React, { useState, useEffect } from "react";
-
 import PokemonCard from "../PokemonCard/PokemonCard";
 import pokedex from "../../data/pokedex";
 import descriptions from "../../data/descriptions";
 import abilities from "../../data/abilities";
 import { EmojiWrapper } from "./styles";
+import { filterOutPokemon } from "../utils";
 
 const PokemonList = ({ searchTerm }) => {
     const [pokemon, setPokemon] = useState([]);
@@ -24,19 +24,12 @@ const PokemonList = ({ searchTerm }) => {
             })
         );
         setIsPokemonLoaded(true);
-    }, [setPokemon, setDescription, setAbility]);
+    }, []);
 
-    //This filtering is causing alot of re-renders
-    //How can we solve this?
-
-    const filteredPokemon = pokemon.filter((pokemon) => {
-        return pokemon.name.english
-            .toLowerCase()
-            .includes(searchTerm.toLowerCase());
-    });
+    const filteredPokemon = filterOutPokemon(pokemon, searchTerm);
 
     return (
-        <div className="row">
+        <div data-testid="pokemon-list" className="row">
             {!isPokemonLoaded || filteredPokemon.length > 0 ? (
                 filteredPokemon.map((pokemon) => (
                     <PokemonCard
