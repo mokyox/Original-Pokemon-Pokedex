@@ -1,5 +1,5 @@
 import React from "react";
-import { render } from "@testing-library/react";
+import { render, cleanup } from "@testing-library/react";
 import PokemonCard from "./PokemonCard";
 
 const props = {
@@ -14,12 +14,13 @@ const props = {
     speed: 100,
     type: ["Psychic"],
     description:
-        "Mew is said to possess the genetic composition of all Pokémon. It is capable of making itself invisible at will,so it entirely avoids notice even if it approaches people.",
+        "Mew is said to possess the genetic composition of all Pokémon.",
     ability: "Synchronize",
 };
 
 describe("<PokemonCard/>", () => {
-    it("Should render a PokemonCard", () => {
+    afterEach(cleanup);
+    it("Should render a PokemonCard with given props", () => {
         const { getByTestId } = render(<PokemonCard {...props} />);
         const card = getByTestId("pokemon-card");
         expect(card).toBeTruthy();
