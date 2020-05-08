@@ -11,6 +11,13 @@
         "react-scripts": "^3.4.1",
         "styled-components": "^5.1.0"
     },
+    "devDependencies": {
+        "@testing-library/react": "^10.0.3",
+        "husky": "^4.2.5",
+        "json-loader": "^0.5.7",
+        "prettier": "2.0.5",
+        "pretty-quick": "^2.0.1"
+    },
     "scripts": {
         "start": "react-scripts start",
         "build": "react-scripts build",
@@ -32,10 +39,5 @@
             "last 1 firefox version",
             "last 1 safari version"
         ]
-    },
-    "devDependencies": {
-        "@testing-library/react": "^10.0.3",
-        "json-loader": "^0.5.7",
-        "prettier": "2.0.5"
     }
 }
