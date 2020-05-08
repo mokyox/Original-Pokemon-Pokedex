@@ -1,6 +1,5 @@
 import React from "react";
-import { PokemonCardStyle } from "./styles";
-import { colors } from "../utils";
+import { PokemonCardStyle, PokemonTypeBadge } from "./styles";
 
 const PokemonCard = ({
     name,
@@ -28,15 +27,13 @@ const PokemonCard = ({
                         <h4 className="pokemon-name">{name}</h4>
                         <p>#{id}</p>
                         {type.map((type) => (
-                            <span
-                                style={{
-                                    backgroundColor: `${colors[type]}`,
-                                }}
+                            <PokemonTypeBadge
                                 className="p-1 m-1 badge"
                                 key={type}
+                                type={type}
                             >
                                 {type}
-                            </span>
+                            </PokemonTypeBadge>
                         ))}
                     </div>
                     <div className="card-body">
