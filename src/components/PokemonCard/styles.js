@@ -38,5 +38,5 @@ export const PokemonCardStyle = createGlobalStyle`
 `;
 
 export const PokemonTypeBadge = styled.span`
-    background-color: ${(props) => colors[props.type]};
+    background-color: ${({ type }) => colors[type]};
 `;
