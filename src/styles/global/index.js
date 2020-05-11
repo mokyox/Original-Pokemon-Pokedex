@@ -146,7 +146,7 @@ h5,
 h6 {
     line-height: 1.2;
     margin-top: 0;
-    margin-bottom: 1.2rem;
+    margin: 0.5rem;
 }
 
 body {
@@ -168,6 +168,10 @@ h1 {
 
 h3 {
     font-size: 1.2rem;
+}
+
+p {
+    margin: 0.375rem;
 }
 
 
