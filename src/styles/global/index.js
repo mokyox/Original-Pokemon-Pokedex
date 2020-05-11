@@ -67,16 +67,11 @@ html {
   text-align: center;
   margin: 0;
   padding: 0;
-  line-height: 1.6;
-  background: rgb(34, 193, 195);
-  background: linear-gradient(
-    120deg,
-    rgba(34, 193, 195, 1) 0%,
-    rgba(253, 187, 45, 1) 100%
-  );
+    background-color: #5661b3;
+    color: #f3f3f3;
+    font-family: "-apple-system","system-ui","BlinkMacSystemFont","Segoe UI","Roboto","Helvetica Neue","Arial",sans-serif;
+}
 
- }
-  
 h1 {
   font-weight: 700;
   font-size: 1.3rem;
