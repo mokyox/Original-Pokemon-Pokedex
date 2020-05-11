@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 import PokemonList from "./PokemonList/PokemonList";
-import { GlobalStyle } from "../styles/global/index";
+import { GlobalStyle, Container } from "../styles/global/index";
 import Navbar from "./Navbar/Navbar";
 
 const App = () => {
@@ -13,10 +13,10 @@ const App = () => {
     return (
         <>
             <GlobalStyle />
-            <div className="container">
+            <Container>
                 <Navbar searchChange={searchChange} />
                 <PokemonList searchTerm={searchTerm} />
-            </div>
+            </Container>
         </>
     );
 };
