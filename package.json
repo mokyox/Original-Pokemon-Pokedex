@@ -13,23 +13,20 @@
     },
     "devDependencies": {
         "@testing-library/react": "^10.0.4",
-        "autoprefixer": "^9.7.6",
-        "babel-plugin-macros": "^2.8.0",
+
         "husky": "^4.2.5",
         "json-loader": "^0.5.7",
-        "postcss-cli": "^7.1.1",
+
         "prettier": "2.0.5",
-        "pretty-quick": "^2.0.1",
-        "tailwind.macro": "^1.0.0-alpha.10",
-        "tailwindcss": "^1.4.6"
+        "pretty-quick": "^2.0.1"
     },
     "scripts": {
         "start": "react-scripts start",
         "build": "react-scripts build",
         "test": "react-scripts test --watchAll=false",
         "eject": "react-scripts eject",
-        "format": "prettier --write \"**/*.js\"",
-        "lint": "eslint './src/**/*.js'"
+        "format": "prettier --write \"**/*.{js,jsx}\"",
+        "lint": "eslint './src/**/*.{js,jsx}'"
     },
     "eslintConfig": {
         "extends": "react-app"
