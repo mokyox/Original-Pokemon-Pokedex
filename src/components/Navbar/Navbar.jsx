@@ -1,11 +1,12 @@
 import React from "react";
 import { handleSubmit } from "../utils";
+import { PageNavbar } from "./styles";
 
 const Navbar = ({ searchChange }) => {
     return (
-        <div>
-            <nav className="navbar navbar-dark bg-dark fixed-top">
-                <h1>Pokedex</h1>
+        <>
+            <PageNavbar className="navbar navbar-dark bg-dark fixed-top justify-content-between">
+                <p>Pokedex</p>
                 <form className="form-inline" onSubmit={handleSubmit}>
                     <input
                         className="form-control mr-sm-2"
@@ -15,8 +16,8 @@ const Navbar = ({ searchChange }) => {
                         onChange={searchChange}
                     />
                 </form>
-            </nav>
-        </div>
+            </PageNavbar>
+        </>
     );
 };
 
