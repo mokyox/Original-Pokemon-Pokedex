@@ -26,7 +26,7 @@
         "test": "react-scripts test --watchAll=false",
         "eject": "react-scripts eject",
         "format": "prettier --write \"**/*.{js,jsx}\"",
-        "lint": "eslint './src/**/*.{js,jsx}'"
+        "lint": "eslint './src/**/*.{js,jsx}' --quiet --fix"
     },
     "eslintConfig": {
         "extends": "react-app"
