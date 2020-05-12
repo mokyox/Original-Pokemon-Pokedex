@@ -1,3 +1,4 @@
+/* eslint-disable react/prop-types */
 import React, { useState, useEffect } from "react";
 import PokemonCard from "../PokemonCard/PokemonCard";
 import pokedex from "../../data/pokedex";

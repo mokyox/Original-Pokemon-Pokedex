@@ -1,20 +1,8 @@
+/* eslint-disable react/prop-types */
 import React from "react";
 import { PokemonTypeBadge, PokemonName, PokemonNumber } from "./styles";
 
-const PokemonCard = ({
-    name,
-    id,
-    image,
-    hp,
-    attack,
-    defense,
-    specialAttack,
-    specialDefense,
-    speed,
-    type,
-    description,
-    ability,
-}) => {
+const PokemonCard = ({ name, id, image, type }) => {
     return (
         <>
             <div
