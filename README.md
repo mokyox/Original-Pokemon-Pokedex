@@ -1,7 +1,5 @@
 # Original 151 Pokemon Pokedex
 
-[![Netlify Status](https://api.netlify.com/api/v1/badges/eb121d73-8ece-430f-a846-f0131331120d/deploy-status)](https://app.netlify.com/sites/mokyoxpokedexreact/deploys)
-
 #### A Pokedex written using React, complete with a searchbox for live search. [View here.](https://mokyoxpokedexreact.netlify.com/)
 
 I initially made this project to solidify my knowledge in React. Since then I've been updating this with small improvements in code structure, quality as well as adding and replacing and removing libraries. I originally made this React and Redux - the current iteration is now using React and Next.js.
