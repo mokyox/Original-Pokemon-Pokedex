@@ -24,7 +24,6 @@
         "build": "next build",
         "start": "next start",
         "export": "next export",
-        "deploy": "npm run build && npm run export",
         "test": " jest --watchAll=false",
         "format": "prettier --write \"**/*.{js,jsx}\"",
         "lint": "eslint './src/**/*.{js,jsx}' --quiet --fix"
