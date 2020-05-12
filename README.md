@@ -1,6 +1,6 @@
 # Original 151 Pokemon Pokedex
 
-#### A Pokedex written using React, complete with a searchbox for live search. [View here.](https://mokyoxpokedexreact.netlify.com/)
+#### A Pokedex written using React, complete with a searchbox for live search. [View here.](https://original-pokemon-pokedex.now.sh/)
 
 I initially made this project to solidify my knowledge in React. Since then I've been updating this with small improvements in code structure, quality as well as adding and replacing and removing libraries. I originally made this React and Redux - the current iteration is now using React and Next.js.
 
