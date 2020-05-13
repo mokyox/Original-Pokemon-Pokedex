@@ -15,6 +15,7 @@
         "babel-eslint": "^10.1.0",
         "eslint": "^7.0.0",
         "eslint-config-prettier": "^6.11.0",
+        "eslint-plugin-react": "^7.20.0",
         "husky": "^4.2.5",
         "json-loader": "^0.5.7",
         "prettier": "2.0.5",

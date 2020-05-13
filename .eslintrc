@@ -4,7 +4,7 @@
         "es6": true,
         "jest": true
     },
-    "extends": ["react-app", "prettier"],
+    "extends": ["eslint:recommended", "plugin:react/recommended", "prettier"],
     "rules": {
         "react/react-in-jsx-scope": "off"
     },
