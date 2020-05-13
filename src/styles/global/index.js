@@ -183,7 +183,7 @@ form {
 `;
 
 const Container = styled.div`
-    margin-top: 100px;
+    margin-top: 4rem;
     padding: 3rem;
 `;
 
