@@ -1,7 +1,6 @@
 /* eslint-disable react/prop-types */
 import React from "react";
-import LazyLoad from "react-lazyload";
-import Spinner from "../Spinner";
+import { LazyLoadImage } from "react-lazy-load-image-component";
 import { PokemonTypeBadge, PokemonName, PokemonNumber } from "./styles";
 
 const PokemonCard = ({ name, id, image, type }) => {
@@ -26,19 +25,13 @@ const PokemonCard = ({ name, id, image, type }) => {
                         ))}
                     </div>
                     <div className="card-body">
-                        <LazyLoad
-                            height="96"
-                            width="96"
-                            placeholder={<Spinner></Spinner>}
-                        >
-                            <img
-                                src={image}
-                                alt={`pokemon: ${name}`}
-                                loading="lazy"
-                                height="96px"
-                                width="96px"
-                            />
-                        </LazyLoad>
+                        <LazyLoadImage
+                            src={image}
+                            alt={`pokemon: ${name}`}
+                            height="96px"
+                            width="96px"
+                            effect="blur"
+                        />
                     </div>
                 </div>
             </div>
