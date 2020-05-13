@@ -1,9 +1,12 @@
 /* eslint-disable react/prop-types */
 import React from "react";
-import { LazyLoadImage } from "react-lazy-load-image-component";
+import {
+    LazyLoadImage,
+    trackWindowScroll,
+} from "react-lazy-load-image-component";
 import { PokemonTypeBadge, PokemonName, PokemonNumber } from "./styles";
 
-const PokemonCard = ({ name, id, image, type }) => {
+const PokemonCard = ({ name, id, image, type, scrollPosition }) => {
     return (
         <>
             <div
@@ -31,6 +34,7 @@ const PokemonCard = ({ name, id, image, type }) => {
                             height="96px"
                             width="96px"
                             effect="blur"
+                            scrollPosition={scrollPosition}
                         />
                     </div>
                 </div>
@@ -39,4 +43,4 @@ const PokemonCard = ({ name, id, image, type }) => {
     );
 };
 
-export default PokemonCard;
+export default trackWindowScroll(PokemonCard);
