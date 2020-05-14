@@ -164,8 +164,7 @@ export const GlobalStyle = createGlobalStyle`${css`
     }
 
     h1 {
-        font-weight: 700;
-        font-size: 1.3rem;
+        font-size: 1.4rem;
     }
 
     h3 {
