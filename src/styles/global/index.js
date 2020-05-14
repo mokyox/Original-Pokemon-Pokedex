@@ -1,6 +1,7 @@
-import * as styled from "styled-components";
+import styled, { createGlobalStyle, css } from "styled-components";
 
-const GlobalStyle = styled.createGlobalStyle`
+export const GlobalStyle = createGlobalStyle`${css`
+    /*Normalise.css*/
     /* http://meyerweb.com/eric/tools/css/reset/ 
    v2.0 | 20110126
    License: none (public domain)
@@ -130,6 +131,7 @@ const GlobalStyle = styled.createGlobalStyle`
         border-collapse: collapse;
         border-spacing: 0;
     }
+    /*Normalise.css END*/
 
     html {
         font-size: 16px;
@@ -177,11 +179,9 @@ const GlobalStyle = styled.createGlobalStyle`
     form {
         font-size: 0.8rem;
     }
-`;
+`}`;
 
-const Container = styled.div`
+export const Container = styled.div`
     margin-top: 4rem;
     padding: 3rem;
 `;
-
-export { GlobalStyle, Container };
