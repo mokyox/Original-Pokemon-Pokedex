@@ -6,7 +6,7 @@ import { GlobalStyle } from "../src/styles/global/";
 export default function MyApp({ Component, pageProps }) {
     return (
         <>
-            <Component {...pageProps} />;
+            <Component {...pageProps} />
             <GlobalStyle />
         </>
     );
