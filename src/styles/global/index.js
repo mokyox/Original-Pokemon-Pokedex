@@ -1,4 +1,4 @@
-import styled, { createGlobalStyle } from "styled-components";
+import * as styled from "styled-components";
 
 const GlobalStyle = styled.createGlobalStyle`
     /* http://meyerweb.com/eric/tools/css/reset/ 
