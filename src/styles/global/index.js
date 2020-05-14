@@ -1,4 +1,4 @@
-import styled, { createGlobalStyle, css } from "styled-components";
+import { createGlobalStyle, css } from "styled-components";
 
 export const GlobalStyle = createGlobalStyle`${css`
     /*Normalise.css*/
@@ -180,8 +180,3 @@ export const GlobalStyle = createGlobalStyle`${css`
         font-size: 0.8rem;
     }
 `}`;
-
-export const Container = styled.div`
-    margin-top: 4rem;
-    padding: 3rem;
-`;

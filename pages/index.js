@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 import Head from "next/head";
 import PokemonList from "../src/components/PokemonList/PokemonList";
-import { GlobalStyle, Container } from "../src/styles/global/";
+import { GlobalStyle } from "../src/styles/global/";
 import Navbar from "../src/components/Navbar/Navbar";
 
 const App = () => {
@@ -23,9 +23,7 @@ const App = () => {
             </Head>
             <GlobalStyle />
             <Navbar searchChange={searchChange} />
-            <Container>
-                <PokemonList searchTerm={searchTerm} />
-            </Container>
+            <PokemonList searchTerm={searchTerm} />
         </>
     );
 };
