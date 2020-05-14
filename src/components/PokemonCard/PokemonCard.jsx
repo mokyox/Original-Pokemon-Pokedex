@@ -1,5 +1,6 @@
 /* eslint-disable react/prop-types */
 import React from "react";
+import Link from "next/link";
 import {
     LazyLoadImage,
     trackWindowScroll,
@@ -15,7 +16,12 @@ const PokemonCard = ({ name, id, image, type, scrollPosition }) => {
             >
                 <div className="card bg-dark text-white">
                     <div className="text-nowrap p-1">
-                        <PokemonName>{name}</PokemonName>
+                        <Link href={`/pokemon/${id}`}>
+                            <a>
+                                <PokemonName>{name}</PokemonName>
+                            </a>
+                        </Link>
+
                         <PokemonNumber>#{id}</PokemonNumber>
                         {type.map((type) => (
                             <PokemonTypeBadge

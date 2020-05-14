@@ -178,4 +178,12 @@ export const GlobalStyle = createGlobalStyle`${css`
     form {
         font-size: 0.8rem;
     }
+    a {
+        color: #f3f3f3;
+        text-decoration: none;
+        &:hover,
+        &:active {
+            color: rgba(255, 255, 255, 0.6);
+        }
+    }
 `}`;
