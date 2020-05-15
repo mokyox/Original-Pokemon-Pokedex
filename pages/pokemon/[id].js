@@ -1,4 +1,5 @@
 import Link from "next/link";
+import Head from "next/head";
 import pokedex from "../../src/data/pokedex";
 import descriptions from "../../src/data/descriptions";
 import abilities from "../../src/data/abilities";
@@ -12,6 +13,14 @@ export default function Pokemons({ pokemonData }) {
 
     return (
         <>
+            <Head>
+                <title>{pokemonData.name.english}</title>
+                <meta charSet="utf-8" />
+                <meta
+                    name="viewport"
+                    content="initial-scale=1.0, width=device-width"
+                />
+            </Head>
             <Pokemon
                 id={pokemonData.id}
                 name={pokemonData.name.english}
