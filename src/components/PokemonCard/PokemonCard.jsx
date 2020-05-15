@@ -16,7 +16,7 @@ const PokemonCard = ({ name, id, image, type, scrollPosition }) => {
             >
                 <div className="card bg-dark text-white">
                     <div className="text-nowrap p-1">
-                        <Link href={`/pokemon/${id}`}>
+                        <Link href={`/pokemon/[id]`} as={`/pokemon/${id}`}>
                             <a>
                                 <PokemonName>{name}</PokemonName>
                             </a>
