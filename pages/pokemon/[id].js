@@ -1,4 +1,3 @@
-import Link from "next/link";
 import Head from "next/head";
 import pokedex from "../../src/data/pokedex";
 import descriptions from "../../src/data/descriptions";
@@ -30,9 +29,6 @@ export default function Pokemons({ pokemonData }) {
                 description={description[pokemonData.id - 1]}
                 ability={ability[pokemonData.id - 1]}
             />
-            <Link href="/">
-                <a className="text-monospace text-uppercase">Go home</a>
-            </Link>
         </>
     );
 }
