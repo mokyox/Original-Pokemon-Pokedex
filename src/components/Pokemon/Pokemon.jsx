@@ -1,11 +1,11 @@
 import React from "react";
-import { Container } from "./styles";
+import { Container, Card } from "./styles";
 import { PokemonTypeBadge } from "../PokemonCard/styles";
 
 const Pokemon = ({ name, id, image, type, stats, description, ability }) => {
     return (
         <Container>
-            <div className="card bg-dark pt-2 p-3 mx-auto">
+            <Card className="card bg-dark">
                 <div className="text-nowrap p-1">
                     <h1>{name}</h1>
                     <h3>#{id}</h3>
@@ -41,7 +41,7 @@ const Pokemon = ({ name, id, image, type, stats, description, ability }) => {
 
                     <p className="p-1 mt-2">{description}</p>
                 </div>
-            </div>
+            </Card>
         </Container>
     );
 };
