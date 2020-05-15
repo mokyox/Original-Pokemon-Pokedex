@@ -34,7 +34,7 @@ const Pokemon = ({ name, id, image, type, stats, description, ability }) => {
                         return (
                             <div key={stat} className="p-2">
                                 <span className="font-weight-bold">{stat}</span>
-                                <span>:{value}</span>
+                                <span>: {value}</span>
                             </div>
                         );
                     })}
