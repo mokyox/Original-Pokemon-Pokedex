@@ -26,6 +26,10 @@ const Pokemon = ({ name, id, image, type, stats, description, ability }) => {
                         height="96px"
                         width="96px"
                     />
+                    <p className="text-capitalize">
+                        <span className="font-weight-bold">Abilities: </span>
+                        {ability}
+                    </p>
                     {Object.entries(stats).map(([stat, value]) => {
                         return (
                             <div key={stat} className="p-2">
@@ -35,11 +39,7 @@ const Pokemon = ({ name, id, image, type, stats, description, ability }) => {
                         );
                     })}
 
-                    <span className="text-capitalize p-3">
-                        <span className="font-weight-bold">Abilities: </span>
-                        {ability}
-                    </span>
-                    <p className="p-1">{description}</p>
+                    <p className="p-1 mt-2">{description}</p>
                 </div>
             </div>
         </Container>
