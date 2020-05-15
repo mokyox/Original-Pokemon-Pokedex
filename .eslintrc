@@ -11,6 +11,7 @@
     ],
     "rules": {
         "no-console": "warn",
+        "react/prop-types": 0,
         "react/react-in-jsx-scope": "off",
         "react/self-closing-comp": [
             "error",
