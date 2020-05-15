@@ -11,13 +11,16 @@
         "styled-components": "^5.1.0"
     },
     "devDependencies": {
+        "@testing-library/jest-dom": "^5.7.0",
         "@testing-library/react": "^10.0.4",
         "babel-eslint": "^10.1.0",
+        "babel-jest": "^26.0.1",
         "eslint": "^7.0.0",
         "eslint-config-prettier": "^6.11.0",
         "eslint-plugin-prettier": "^3.1.3",
         "eslint-plugin-react": "^7.20.0",
         "husky": "^4.2.5",
+        "jest": "^26.0.1",
         "json-loader": "^0.5.7",
         "lint-staged": "^10.2.2",
         "prettier": "2.0.5"
