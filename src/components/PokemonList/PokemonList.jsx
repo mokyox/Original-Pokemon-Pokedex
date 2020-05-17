@@ -30,7 +30,7 @@ const PokemonList = ({ searchTerm }) => {
     const filteredPokemon = filterOutPokemon(pokemon, searchTerm);
 
     return (
-        <PokemonContainer data-testid="pokemon-list" className="row">
+        <PokemonContainer data-testid="pokemon-list">
             {!isPokemonLoaded || filteredPokemon.length > 0 ? (
                 filteredPokemon.map((pokemon) => (
                     <PokemonCard
