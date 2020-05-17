@@ -17,7 +17,6 @@ const PokemonCard = ({ name, id, image, type, scrollPosition }) => {
                             <PokemonName>{name}</PokemonName>
                         </a>
                     </Link>
-
                     <PokemonNumber>#{id}</PokemonNumber>
                     {type.map((type) => (
                         <PokemonTypeBadge
