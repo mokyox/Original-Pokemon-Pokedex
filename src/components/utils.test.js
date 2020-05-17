@@ -1,8 +1,50 @@
 import { filterOutPokemon } from "./utils";
-import pokedex from "../data/pokedex";
 
 describe("Filtering of pokemon", () => {
-    const pokemon = pokedex;
+    const pokemon = [
+        {
+            id: 1,
+            name: {
+                english: "Bulbasaur",
+            },
+        },
+        {
+            id: 4,
+            name: {
+                english: "Charmander",
+            },
+        },
+        {
+            id: 120,
+            name: {
+                english: "Staryu",
+            },
+        },
+        {
+            id: 121,
+            name: {
+                english: "Starmie",
+            },
+        },
+        {
+            id: 139,
+            name: {
+                english: "Omastar",
+            },
+        },
+        {
+            id: 147,
+            name: {
+                english: "Dratini",
+            },
+        },
+        {
+            id: 151,
+            name: {
+                english: "Mew",
+            },
+        },
+    ];
     it("should return an array of 3 Pokemon - Staryu, Starmie and Omastar", () => {
         const term = "star";
         const filteredPokemon = filterOutPokemon(pokemon, term);
