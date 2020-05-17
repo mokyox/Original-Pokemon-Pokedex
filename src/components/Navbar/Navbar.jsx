@@ -2,7 +2,6 @@ import React from "react";
 import { handleSubmit } from "../utils";
 import { PageNavbar } from "./styles";
 
-// eslint-disable-next-line react/prop-types
 const Navbar = ({ searchChange }) => {
     return (
         <>
