@@ -38,7 +38,6 @@ const Pokemon = ({ name, id, image, type, stats, description, ability }) => {
                             </div>
                         );
                     })}
-
                     <p className="p-1 mt-2">{description}</p>
                 </div>
             </Card>
