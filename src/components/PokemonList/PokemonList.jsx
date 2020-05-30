@@ -3,7 +3,7 @@ import PokemonCard from "../PokemonCard/PokemonCard";
 import pokedex from "../../data/pokedex";
 import descriptions from "../../data/descriptions";
 import abilities from "../../data/abilities";
-import { EmojiWrapper, PokemonContainer } from "./styles";
+import { EmojiWrapper, PokemonContainer, NotFoundCard } from "./styles";
 import { filterOutPokemon } from "../utils";
 
 const PokemonList = ({ searchTerm }) => {
@@ -50,7 +50,7 @@ const PokemonList = ({ searchTerm }) => {
                 ))
             ) : (
                 <>
-                    <div className="card text-white bg-danger mb-3 mx-auto">
+                    <NotFoundCard className="card bg-danger">
                         <div className="card-body">
                             <h3 className="card-title">
                                 <EmojiWrapper>
@@ -63,7 +63,7 @@ const PokemonList = ({ searchTerm }) => {
                                 No Pokemon found. Please refine your search
                             </h3>
                         </div>
-                    </div>
+                    </NotFoundCard>
                 </>
             )}
         </PokemonContainer>

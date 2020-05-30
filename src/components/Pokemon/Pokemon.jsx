@@ -6,7 +6,7 @@ const Pokemon = ({ name, id, image, type, stats, description, ability }) => {
     return (
         <Container>
             <Card className="card bg-dark">
-                <div className="text-nowrap p-1">
+                <div className="text-nowrap">
                     <h1>{name}</h1>
                     <h3>#{id}</h3>
                     {type.map((type) => (
