@@ -1,5 +1,6 @@
 import React from "react";
-import { Container, Card } from "./styles";
+import Link from "next/link";
+import { Container, Card, NavigationContainer } from "./styles";
 import { PokemonTypeBadge } from "../PokemonCard/styles";
 
 const Pokemon = ({ name, id, image, type, stats, description, ability }) => {
@@ -41,6 +42,32 @@ const Pokemon = ({ name, id, image, type, stats, description, ability }) => {
                     <p className="p-1 mt-2">{description}</p>
                 </div>
             </Card>
+            <NavigationContainer>
+                {id > 1 ? (
+                    <Link href={`/pokemon/[id]`} as={`/pokemon/${id - 1}`}>
+                        <a className="text-monospace text-uppercase p-2 m-2 badge badge-dark">
+                            Previous Pokemon
+                        </a>
+                    </Link>
+                ) : (
+                    ""
+                )}
+
+                <Link href="/">
+                    <a className="text-monospace text-uppercase p-2 m-2 badge badge-dark">
+                        Go home
+                    </a>
+                </Link>
+                {id < 151 ? (
+                    <Link href={`/pokemon/[id]`} as={`/pokemon/${id + 1}`}>
+                        <a className="text-monospace text-uppercase p-2 m-2 badge badge-dark">
+                            Next Pokemon
+                        </a>
+                    </Link>
+                ) : (
+                    ""
+                )}
+            </NavigationContainer>
         </Container>
     );
 };

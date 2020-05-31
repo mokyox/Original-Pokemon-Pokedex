@@ -1,5 +1,4 @@
 import Head from "next/head";
-import Link from "next/link";
 import pokedex from "../../src/data/pokedex";
 import descriptions from "../../src/data/descriptions";
 import abilities from "../../src/data/abilities";
@@ -30,36 +29,6 @@ export default function Pokemons({ pokemonData }) {
                 description={description[pokemonData.id - 1]}
                 ability={ability[pokemonData.id - 1]}
             />
-            {pokemonData.id > 1 ? (
-                <Link
-                    href={`/pokemon/[id]`}
-                    as={`/pokemon/${pokemonData.id - 1}`}
-                >
-                    <a className="text-monospace text-uppercase p-2 m-2 badge badge-dark">
-                        Previous Pokemon
-                    </a>
-                </Link>
-            ) : (
-                ""
-            )}
-
-            <Link href="/">
-                <a className="text-monospace text-uppercase p-2 m-2 badge badge-dark">
-                    Go home
-                </a>
-            </Link>
-            {pokemonData.id < 151 ? (
-                <Link
-                    href={`/pokemon/[id]`}
-                    as={`/pokemon/${pokemonData.id + 1}`}
-                >
-                    <a className="text-monospace text-uppercase p-2 m-2 badge badge-dark">
-                        Next Pokemon
-                    </a>
-                </Link>
-            ) : (
-                ""
-            )}
         </>
     );
 }
