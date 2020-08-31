@@ -1,0 +1,160 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`<Pokemon/> renders correctly 1`] = `
+<div
+  className="sc-AxirZ jenCHn"
+>
+  <div
+    className="sc-AxjAm haUSLh card bg-dark"
+  >
+    <div
+      className="text-nowrap"
+    >
+      <h1>
+        Bulbasaur
+      </h1>
+      <h3>
+        #
+        1
+      </h3>
+      <span
+        className="sc-AxheI gZmjOl p-1 m-1 badge"
+        type="Grass"
+      >
+        Grass
+      </span>
+      <span
+        className="sc-AxheI fdUQAM p-1 m-1 badge"
+        type="Poison"
+      >
+        Poison
+      </span>
+    </div>
+    <div
+      className="card-body"
+    >
+      <img
+        alt="pokemon: Bulbasaur"
+        height="96px"
+        src=""
+        width="96px"
+      />
+      <p
+        className="text-capitalize"
+      >
+        <span
+          className="font-weight-bold"
+        >
+          Abilities: 
+        </span>
+        Chlorophyll
+        Overgrow
+      </p>
+      <div
+        className="p-2"
+      >
+        <span
+          className="font-weight-bold"
+        >
+          HP
+        </span>
+        <span>
+          : 
+          45
+        </span>
+      </div>
+      <div
+        className="p-2"
+      >
+        <span
+          className="font-weight-bold"
+        >
+          Attack
+        </span>
+        <span>
+          : 
+          49
+        </span>
+      </div>
+      <div
+        className="p-2"
+      >
+        <span
+          className="font-weight-bold"
+        >
+          Defense
+        </span>
+        <span>
+          : 
+          49
+        </span>
+      </div>
+      <div
+        className="p-2"
+      >
+        <span
+          className="font-weight-bold"
+        >
+          Sp. Attack
+        </span>
+        <span>
+          : 
+          65
+        </span>
+      </div>
+      <div
+        className="p-2"
+      >
+        <span
+          className="font-weight-bold"
+        >
+          Sp. Defense
+        </span>
+        <span>
+          : 
+          65
+        </span>
+      </div>
+      <div
+        className="p-2"
+      >
+        <span
+          className="font-weight-bold"
+        >
+          Speed
+        </span>
+        <span>
+          : 
+          45
+        </span>
+      </div>
+      <p
+        className="p-1 mt-2"
+      >
+        Bulbasaur can be seen napping in bright sunlight. There is a seed on its back. By soaking up the sun’s rays, the seed grows progressively larger.
+      </p>
+    </div>
+  </div>
+  <div
+    className="sc-AxiKw idQSPI"
+  >
+    
+    <a
+      className="text-monospace text-uppercase p-2 m-2 badge badge-dark"
+      href="/"
+      onClick={[Function]}
+      onMouseEnter={[Function]}
+    >
+      Go home
+    </a>
+    <a
+      className="text-monospace text-uppercase p-2 m-2 badge badge-dark"
+      href="/pokemon/2"
+      onClick={[Function]}
+      onMouseEnter={[Function]}
+    >
+      Next Pokemon
+    </a>
+  </div>
+</div>
+`;

@@ -1,0 +1,22 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`<Navbar/> renders correctly 1`] = `
+<nav
+  className="sc-AxjAm dTOEMn navbar navbar-dark bg-dark fixed-top justify-content-between"
+>
+  <p>
+    Pokedex
+  </p>
+  <form
+    className="form-inline"
+    onSubmit={[Function]}
+  >
+    <input
+      aria-label="search"
+      className="form-control mr-sm-2"
+      placeholder="Search Pokemon"
+      type="search"
+    />
+  </form>
+</nav>
+`;

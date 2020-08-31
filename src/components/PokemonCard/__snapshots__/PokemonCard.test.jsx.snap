@@ -1,0 +1,70 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`<PokemonCard/> renders correctly 1`] = `
+<div
+  className="card bg-dark text-white"
+  data-testid="pokemon-card"
+>
+  <div
+    className="text-nowrap p-1"
+  >
+    <a
+      href="/pokemon/1"
+      onClick={[Function]}
+      onMouseEnter={[Function]}
+    >
+      <h1
+        className="sc-AxirZ hdJQpm"
+      >
+        Bulbasaur
+      </h1>
+    </a>
+    <p
+      className="sc-AxiKw kfEbZP"
+    >
+      #
+      1
+    </p>
+    <span
+      className="sc-AxhCb bYwArI p-1 m-1 badge"
+      type="Grass"
+    >
+      Grass
+    </span>
+    <span
+      className="sc-AxhCb iimvpN p-1 m-1 badge"
+      type="Poison"
+    >
+      Poison
+    </span>
+  </div>
+  <div
+    className="card-body"
+  >
+    <span
+      className=" lazy-load-image-background blur"
+      style={
+        Object {
+          "backgroundImage": "",
+          "backgroundSize": "",
+          "color": "transparent",
+          "display": "inline-block",
+          "height": "96px",
+          "width": "96px",
+        }
+      }
+    >
+      <span
+        className=""
+        style={
+          Object {
+            "display": "inline-block",
+            "height": "96px",
+            "width": "96px",
+          }
+        }
+      />
+    </span>
+  </div>
+</div>
+`;
