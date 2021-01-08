@@ -2,10 +2,10 @@
 
 exports[`<Pokemon/> renders correctly 1`] = `
 <div
-  className="sc-AxirZ jenCHn"
+  className="sc-gsTCUz jnERit"
 >
   <div
-    className="sc-AxjAm haUSLh card bg-dark"
+    className="sc-bdfBwQ izBlXI card bg-dark"
   >
     <div
       className="text-nowrap"
@@ -18,13 +18,13 @@ exports[`<Pokemon/> renders correctly 1`] = `
         1
       </h3>
       <span
-        className="sc-AxheI gZmjOl p-1 m-1 badge"
+        className="sc-gKsewC hEFuUM p-1 m-1 badge"
         type="Grass"
       >
         Grass
       </span>
       <span
-        className="sc-AxheI fdUQAM p-1 m-1 badge"
+        className="sc-gKsewC btbtgJ p-1 m-1 badge"
         type="Poison"
       >
         Poison
@@ -136,7 +136,7 @@ exports[`<Pokemon/> renders correctly 1`] = `
     </div>
   </div>
   <div
-    className="sc-AxiKw idQSPI"
+    className="sc-dlfnbm iypcfF"
   >
     
     <a

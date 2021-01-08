@@ -14,25 +14,25 @@ exports[`<PokemonCard/> renders correctly 1`] = `
       onMouseEnter={[Function]}
     >
       <h1
-        className="sc-AxirZ hdJQpm"
+        className="sc-gsTCUz WoLrw"
       >
         Bulbasaur
       </h1>
     </a>
     <p
-      className="sc-AxiKw kfEbZP"
+      className="sc-dlfnbm jlPLfS"
     >
       #
       1
     </p>
     <span
-      className="sc-AxhCb bYwArI p-1 m-1 badge"
+      className="sc-hKgILt jZiBZz p-1 m-1 badge"
       type="Grass"
     >
       Grass
     </span>
     <span
-      className="sc-AxhCb iimvpN p-1 m-1 badge"
+      className="sc-hKgILt jaTCq p-1 m-1 badge"
       type="Poison"
     >
       Poison
@@ -47,7 +47,6 @@ exports[`<PokemonCard/> renders correctly 1`] = `
         Object {
           "backgroundImage": "",
           "backgroundSize": "",
-          "color": "transparent",
           "display": "inline-block",
           "height": "96px",
           "width": "96px",
