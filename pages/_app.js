@@ -3,10 +3,10 @@ import "react-lazy-load-image-component/src/effects/blur.css";
 import { GlobalStyle } from "../src/styles/global/";
 
 export default function MyApp({ Component, pageProps }) {
-    return (
-        <>
-            <Component {...pageProps} />
-            <GlobalStyle />
-        </>
-    );
+  return (
+    <>
+      <Component {...pageProps} />
+      <GlobalStyle />
+    </>
+  );
 }
