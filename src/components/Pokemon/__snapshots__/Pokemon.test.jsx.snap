@@ -13,10 +13,10 @@ exports[`<Pokemon/> renders correctly 1`] = `
       <h1>
         Bulbasaur
       </h1>
-      <h3>
+      <h2>
         #
         1
-      </h3>
+      </h2>
       <span
         className="sc-gKsewC iVbtrA p-1 m-1 badge"
         type="Grass"
@@ -138,7 +138,6 @@ exports[`<Pokemon/> renders correctly 1`] = `
   <div
     className="sc-dlfnbm jDSPV"
   >
-    
     <a
       className="text-monospace text-uppercase p-2 m-2 badge badge-dark"
       href="/"
