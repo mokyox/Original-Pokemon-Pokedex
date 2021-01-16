@@ -16,6 +16,7 @@ const App = () => {
         <title>151 Pokemon Pokedex</title>
         <meta charSet="utf-8" />
         <meta name="viewport" content="initial-scale=1.0, width=device-width" />
+        <meta name="description" content="An original 151 Pokedex app" />
       </Head>
       <Navbar searchChange={searchChange} />
       <PokemonList searchTerm={searchTerm} />

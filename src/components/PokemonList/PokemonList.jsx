@@ -1,9 +1,10 @@
 import React, { useState, useEffect } from "react";
 import PokemonCard from "../PokemonCard/PokemonCard";
+import PokemonNotFoundCard from "../PokemonNotFoundCard/PokemonNotFoundCard";
 import pokedex from "../../data/pokedex";
 import descriptions from "../../data/descriptions";
 import abilities from "../../data/abilities";
-import { EmojiWrapper, PokemonContainer, NotFoundCard } from "./styles";
+import { PokemonContainer } from "./styles";
 import { filterOutPokemon } from "../utils";
 
 const PokemonList = ({ searchTerm }) => {
@@ -13,7 +14,6 @@ const PokemonList = ({ searchTerm }) => {
   const [isPokemonLoaded, setIsPokemonLoaded] = useState(false);
 
   useEffect(() => {
-    //Get pokemon data
     setPokemon(pokedex);
     setDescription(descriptions);
     setAbility(
@@ -47,22 +47,7 @@ const PokemonList = ({ searchTerm }) => {
           />
         ))
       ) : (
-        <>
-          <NotFoundCard className="card bg-danger">
-            <div className="card-body">
-              <h3 className="card-title">
-                <EmojiWrapper>
-                  <span role="img" aria-label="Scream">
-                    😱
-                  </span>
-                </EmojiWrapper>
-              </h3>
-              <h3 className="card-text">
-                No Pokemon found. Please refine your search
-              </h3>
-            </div>
-          </NotFoundCard>
-        </>
+        <PokemonNotFoundCard />
       )}
     </PokemonContainer>
   );
