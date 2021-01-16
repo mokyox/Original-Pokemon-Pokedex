@@ -9,7 +9,7 @@ const Pokemon = ({ name, id, image, type, stats, description, ability }) => {
       <Card className="card bg-dark">
         <div className="text-nowrap">
           <h1>{name}</h1>
-          <h3>#{id}</h3>
+          <h2>#{id}</h2>
           {type.map((type) => (
             <PokemonTypeBadge className="p-1 m-1 badge" key={type} type={type}>
               {type}
@@ -39,29 +39,24 @@ const Pokemon = ({ name, id, image, type, stats, description, ability }) => {
         </div>
       </Card>
       <NavigationContainer>
-        {id > 1 ? (
+        {id > 1 && (
           <Link href={`/pokemon/[id]`} as={`/pokemon/${id - 1}`}>
             <a className="text-monospace text-uppercase p-2 m-2 badge badge-dark">
               Previous Pokemon
             </a>
           </Link>
-        ) : (
-          ""
         )}
-
         <Link href="/">
           <a className="text-monospace text-uppercase p-2 m-2 badge badge-dark">
             Go home
           </a>
         </Link>
-        {id < 151 ? (
+        {id < 151 && (
           <Link href={`/pokemon/[id]`} as={`/pokemon/${id + 1}`}>
             <a className="text-monospace text-uppercase p-2 m-2 badge badge-dark">
               Next Pokemon
             </a>
           </Link>
-        ) : (
-          ""
         )}
       </NavigationContainer>
     </Container>
