@@ -1,6 +1,5 @@
-import "bootstrap/dist/css/bootstrap.min.css";
-import "react-lazy-load-image-component/src/effects/blur.css";
 import { GlobalStyle } from "../src/styles/global/";
+import "react-lazy-load-image-component/src/effects/blur.css";
 
 export default function MyApp({ Component, pageProps }) {
   return (
