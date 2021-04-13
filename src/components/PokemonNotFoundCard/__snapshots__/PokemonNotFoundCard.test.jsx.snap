@@ -2,16 +2,12 @@
 
 exports[`<PokemonNotFoundCard/> renders correctly 1`] = `
 <div
-  className="sc-gsTCUz dWKMot card bg-danger"
+  className="styles__NotFoundCard-sc-17i94m6-1 kUMET"
 >
-  <div
-    className="card-body"
-  >
-    <h3
-      className="card-title"
-    >
+  <div>
+    <h3>
       <span
-        className="sc-bdfBwQ hczRhm"
+        className="styles__EmojiWrapper-sc-17i94m6-0 hnLJrY"
       >
         <span
           aria-label="Scream"
@@ -21,9 +17,7 @@ exports[`<PokemonNotFoundCard/> renders correctly 1`] = `
         </span>
       </span>
     </h3>
-    <h3
-      className="card-text"
-    >
+    <h3>
       No Pokemon found. Please refine your search
     </h3>
   </div>

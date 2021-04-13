@@ -2,7 +2,7 @@ import styled from "styled-components";
 import { device } from "../../styles/media";
 
 export const PokemonContainer = styled.div`
-  padding: 3rem 6rem;
+  padding: 1.5rem 2rem;
   margin-top: 3rem;
   display: grid;
   grid-template-columns: repeat(1, 1fr);
@@ -10,6 +10,7 @@ export const PokemonContainer = styled.div`
   grid-row-gap: 1rem;
 
   @media ${device.tablet} {
+    padding: 3rem 6rem;
     grid-template-columns: repeat(3, 1fr);
     grid-column-gap: 2rem;
     grid-row-gap: 1rem;

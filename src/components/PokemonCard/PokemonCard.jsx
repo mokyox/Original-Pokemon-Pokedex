@@ -1,6 +1,12 @@
 import React from "react";
 import Link from "next/link";
-import { PokemonTypeBadge, PokemonName, PokemonNumber } from "./styles";
+import {
+  PokemonTypeBadgeContainer,
+  PokemonTypeBadge,
+  PokemonName,
+  PokemonNumber,
+  PokemonCardContainer,
+} from "./styles";
 import {
   LazyLoadImage,
   trackWindowScroll,
@@ -8,21 +14,22 @@ import {
 
 const PokemonCard = ({ name, id, image, type, scrollPosition }) => {
   return (
-    <div className="card bg-dark text-white" data-testid="pokemon-card">
-      <div className="text-nowrap p-1">
-        <Link href={`/pokemon/[id]`} as={`/pokemon/${id}`}>
-          <a>
-            <PokemonName>{name}</PokemonName>
-          </a>
-        </Link>
-        <PokemonNumber>#{id}</PokemonNumber>
+    <PokemonCardContainer data-testid="pokemon-card">
+      <Link href={`/pokemon/[id]`} as={`/pokemon/${id}`}>
+        <a>
+          <PokemonName>{name}</PokemonName>
+        </a>
+      </Link>
+      <PokemonNumber>#{id}</PokemonNumber>
+      <PokemonTypeBadgeContainer>
         {type.map((type) => (
-          <PokemonTypeBadge className="p-1 m-1 badge" key={type} type={type}>
+          <PokemonTypeBadge key={type} type={type}>
             {type}
           </PokemonTypeBadge>
         ))}
-      </div>
-      <div className="card-body">
+      </PokemonTypeBadgeContainer>
+
+      <div>
         <LazyLoadImage
           src={image}
           alt={`pokemon: ${name}`}
@@ -32,7 +39,7 @@ const PokemonCard = ({ name, id, image, type, scrollPosition }) => {
           scrollPosition={scrollPosition}
         />
       </div>
-    </div>
+    </PokemonCardContainer>
   );
 };
 
