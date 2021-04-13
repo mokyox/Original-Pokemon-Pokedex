@@ -5,10 +5,11 @@ export const Container = styled.div`
   display: flex;
   flex-direction: column;
   place-items: center;
-  margin-top: 8rem;
+  margin-top: 4rem;
   padding: 0.75rem;
 
   @media ${device.tablet} {
+    margin-top: 8rem;
     padding: 4rem;
   }
 `;
