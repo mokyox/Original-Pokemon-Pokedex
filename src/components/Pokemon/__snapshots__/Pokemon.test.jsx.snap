@@ -2,144 +2,153 @@
 
 exports[`<Pokemon/> renders correctly 1`] = `
 <div
-  className="sc-gsTCUz bdNDAl"
+  className="styles__Container-sc-1xae1zv-0 nxMPg"
 >
   <div
-    className="sc-bdfBwQ kijUgU card bg-dark"
+    className="styles__Card-sc-1xae1zv-1 HrVBl"
   >
-    <div
-      className="text-nowrap"
+    <h2
+      className="styles__PokemonName-sc-1rlmv0d-1 jqiFDT"
     >
-      <h1>
-        Bulbasaur
-      </h1>
-      <h2>
-        #
-        1
-      </h2>
+      Bulbasaur
+    </h2>
+    <p
+      className="styles__PokemonNumber-sc-1rlmv0d-2 iUnciT"
+    >
+      #
+      1
+    </p>
+    <div
+      className="styles__PokemonTypeBadgeContainer-sc-1rlmv0d-3 blForx"
+    >
       <span
-        className="sc-gKsewC iVbtrA p-1 m-1 badge"
+        className="styles__PokemonTypeBadge-sc-1rlmv0d-4 kQwjYZ"
         type="Grass"
       >
         Grass
       </span>
       <span
-        className="sc-gKsewC cJxrDx p-1 m-1 badge"
+        className="styles__PokemonTypeBadge-sc-1rlmv0d-4 iCowM"
         type="Poison"
       >
         Poison
       </span>
     </div>
-    <div
-      className="card-body"
+    <img
+      alt="pokemon: Bulbasaur"
+      height="96px"
+      src=""
+      width="96px"
+    />
+    <h4
+      className="styles__PokemonAbility-sc-1xae1zv-3 bUcA-DO"
     >
-      <img
-        alt="pokemon: Bulbasaur"
-        height="96px"
-        src=""
-        width="96px"
-      />
-      <p
-        className="text-capitalize"
+      <span>
+        Abilities: 
+      </span>
+      Chlorophyll
+      Overgrow
+    </h4>
+    <div
+      className="styles__PokemonStatContainer-sc-1xae1zv-4 bhBYyW"
+    >
+      <span
+        className="styles__PokemonStatName-sc-1xae1zv-5 hXdFiU"
       >
-        <span
-          className="font-weight-bold"
-        >
-          Abilities: 
-        </span>
-        Chlorophyll
-        Overgrow
-      </p>
-      <div
-        className="p-2"
+        HP
+      </span>
+      <span
+        className="styles__PokemonStatValue-sc-1xae1zv-6 QWgVO"
       >
-        <span
-          className="font-weight-bold"
-        >
-          HP
-        </span>
-        <span>
-          : 
-          45
-        </span>
-      </div>
-      <div
-        className="p-2"
-      >
-        <span
-          className="font-weight-bold"
-        >
-          Attack
-        </span>
-        <span>
-          : 
-          49
-        </span>
-      </div>
-      <div
-        className="p-2"
-      >
-        <span
-          className="font-weight-bold"
-        >
-          Defense
-        </span>
-        <span>
-          : 
-          49
-        </span>
-      </div>
-      <div
-        className="p-2"
-      >
-        <span
-          className="font-weight-bold"
-        >
-          Sp. Attack
-        </span>
-        <span>
-          : 
-          65
-        </span>
-      </div>
-      <div
-        className="p-2"
-      >
-        <span
-          className="font-weight-bold"
-        >
-          Sp. Defense
-        </span>
-        <span>
-          : 
-          65
-        </span>
-      </div>
-      <div
-        className="p-2"
-      >
-        <span
-          className="font-weight-bold"
-        >
-          Speed
-        </span>
-        <span>
-          : 
-          45
-        </span>
-      </div>
-      <p
-        className="p-1 mt-2"
-      >
-        Bulbasaur can be seen napping in bright sunlight. There is a seed on its back. By soaking up the sun’s rays, the seed grows progressively larger.
-      </p>
+        : 
+        45
+      </span>
     </div>
+    <div
+      className="styles__PokemonStatContainer-sc-1xae1zv-4 bhBYyW"
+    >
+      <span
+        className="styles__PokemonStatName-sc-1xae1zv-5 hXdFiU"
+      >
+        Attack
+      </span>
+      <span
+        className="styles__PokemonStatValue-sc-1xae1zv-6 QWgVO"
+      >
+        : 
+        49
+      </span>
+    </div>
+    <div
+      className="styles__PokemonStatContainer-sc-1xae1zv-4 bhBYyW"
+    >
+      <span
+        className="styles__PokemonStatName-sc-1xae1zv-5 hXdFiU"
+      >
+        Defense
+      </span>
+      <span
+        className="styles__PokemonStatValue-sc-1xae1zv-6 QWgVO"
+      >
+        : 
+        49
+      </span>
+    </div>
+    <div
+      className="styles__PokemonStatContainer-sc-1xae1zv-4 bhBYyW"
+    >
+      <span
+        className="styles__PokemonStatName-sc-1xae1zv-5 hXdFiU"
+      >
+        Sp. Attack
+      </span>
+      <span
+        className="styles__PokemonStatValue-sc-1xae1zv-6 QWgVO"
+      >
+        : 
+        65
+      </span>
+    </div>
+    <div
+      className="styles__PokemonStatContainer-sc-1xae1zv-4 bhBYyW"
+    >
+      <span
+        className="styles__PokemonStatName-sc-1xae1zv-5 hXdFiU"
+      >
+        Sp. Defense
+      </span>
+      <span
+        className="styles__PokemonStatValue-sc-1xae1zv-6 QWgVO"
+      >
+        : 
+        65
+      </span>
+    </div>
+    <div
+      className="styles__PokemonStatContainer-sc-1xae1zv-4 bhBYyW"
+    >
+      <span
+        className="styles__PokemonStatName-sc-1xae1zv-5 hXdFiU"
+      >
+        Speed
+      </span>
+      <span
+        className="styles__PokemonStatValue-sc-1xae1zv-6 QWgVO"
+      >
+        : 
+        45
+      </span>
+    </div>
+    <p
+      className="styles__PokemonDescription-sc-1xae1zv-7 iEFcpj"
+    >
+      Bulbasaur can be seen napping in bright sunlight. There is a seed on its back. By soaking up the sun’s rays, the seed grows progressively larger.
+    </p>
   </div>
   <div
-    className="sc-dlfnbm jDSPV"
+    className="styles__NavigationContainer-sc-1xae1zv-2 gvpHJn"
   >
     <a
-      className="text-monospace text-uppercase p-2 m-2 badge badge-dark"
       href="/"
       onClick={[Function]}
       onMouseEnter={[Function]}
@@ -147,7 +156,6 @@ exports[`<Pokemon/> renders correctly 1`] = `
       Go home
     </a>
     <a
-      className="text-monospace text-uppercase p-2 m-2 badge badge-dark"
       href="/pokemon/2"
       onClick={[Function]}
       onMouseEnter={[Function]}

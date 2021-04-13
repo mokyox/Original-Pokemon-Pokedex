@@ -1,15 +1,14 @@
 import React from "react";
 import { handleSubmit } from "../utils";
-import { PageNavbar } from "./styles";
+import { PageNavbar, StyledInput } from "./styles";
 
 const Navbar = ({ searchChange }) => {
   return (
     <>
-      <PageNavbar className="navbar navbar-dark bg-dark fixed-top justify-content-between">
+      <PageNavbar>
         <p>Pokedex</p>
-        <form className="form-inline" onSubmit={handleSubmit}>
-          <input
-            className="form-control mr-sm-2"
+        <form onSubmit={handleSubmit}>
+          <StyledInput
             type="search"
             placeholder="Search Pokemon"
             aria-label="search"

@@ -2,45 +2,43 @@
 
 exports[`<PokemonCard/> renders correctly 1`] = `
 <div
-  className="card bg-dark text-white"
+  className="styles__PokemonCardContainer-sc-1rlmv0d-0 ljUTdH"
   data-testid="pokemon-card"
 >
-  <div
-    className="text-nowrap p-1"
+  <a
+    href="/pokemon/1"
+    onClick={[Function]}
+    onMouseEnter={[Function]}
   >
-    <a
-      href="/pokemon/1"
-      onClick={[Function]}
-      onMouseEnter={[Function]}
+    <h2
+      className="styles__PokemonName-sc-1rlmv0d-1 jqiFDT"
     >
-      <h1
-        className="sc-gsTCUz gQazWk"
-      >
-        Bulbasaur
-      </h1>
-    </a>
-    <p
-      className="sc-dlfnbm gXfYPm"
-    >
-      #
-      1
-    </p>
+      Bulbasaur
+    </h2>
+  </a>
+  <p
+    className="styles__PokemonNumber-sc-1rlmv0d-2 iUnciT"
+  >
+    #
+    1
+  </p>
+  <div
+    className="styles__PokemonTypeBadgeContainer-sc-1rlmv0d-3 blForx"
+  >
     <span
-      className="sc-hKgILt jsVEoT p-1 m-1 badge"
+      className="styles__PokemonTypeBadge-sc-1rlmv0d-4 kQwjYZ"
       type="Grass"
     >
       Grass
     </span>
     <span
-      className="sc-hKgILt kSjFqG p-1 m-1 badge"
+      className="styles__PokemonTypeBadge-sc-1rlmv0d-4 iCowM"
       type="Poison"
     >
       Poison
     </span>
   </div>
-  <div
-    className="card-body"
-  >
+  <div>
     <span
       className=" lazy-load-image-background blur"
       style={

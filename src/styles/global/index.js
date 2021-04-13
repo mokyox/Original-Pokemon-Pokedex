@@ -159,8 +159,8 @@ export const GlobalStyle = createGlobalStyle`${css`
     padding: 0;
     background-color: #5661b3;
     color: #f3f3f3;
-    font-family: "-apple-system", "system-ui", "BlinkMacSystemFont", "Segoe UI",
-      "Roboto", "Helvetica Neue", "Arial", sans-serif;
+    font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen,
+      Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
   }
 
   h1 {
