@@ -7,11 +7,6 @@ export const Container = styled.div`
   place-items: center;
   margin-top: 4rem;
   padding: 0.75rem;
-
-  @media ${device.tablet} {
-    margin-top: 8rem;
-    padding: 4rem;
-  }
 `;
 export const Card = styled.div`
   font-size: 0.8rem;
