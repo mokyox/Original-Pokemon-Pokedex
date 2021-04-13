@@ -2,7 +2,7 @@
 
 exports[`<Pokemon/> renders correctly 1`] = `
 <div
-  className="styles__Container-sc-1xae1zv-0 nxMPg"
+  className="styles__Container-sc-1xae1zv-0 lfPpXP"
 >
   <div
     className="styles__Card-sc-1xae1zv-1 HrVBl"
