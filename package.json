@@ -29,7 +29,8 @@
         "dev": "next dev",
         "build": "next build",
         "start": "next start",
-        "test": "jest --watchAll",
+        "test": "jest",
+        "test:watch": "jest --watchAll",
         "format": "prettier --write './**/*.{js,jsx,yml}'",
         "lint": "eslint './**/*.{js,jsx}' --fix"
     }
